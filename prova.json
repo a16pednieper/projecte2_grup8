@@ -1,0 +1,32 @@
+[
+    {
+    "nom": "Viaje playa",
+    "categoria": "playa",
+    "imatge": "https://picsum.photos/400/400",
+    "data": "",
+    "likes": 2,
+    "dislikes": 1,
+    "desc": "Text de prova per el primer JSON"
+    },
+
+    {
+    "nom": "Viaje montaña",
+    "categoria": "montaña",
+    "imatge": "https://picsum.photos/400/400",
+    "data": "",
+    "likes": 5,
+    "dislikes": 2,
+    "desc": "Text de prova per el primer JSON, segona experiencia"
+    },
+
+    {
+    "nom": "Viaje TorreMolinos",
+    "categoria": "historico",
+    "imatge": "https://picsum.photos/400/400",
+    "data": "",
+    "likes": 10,
+    "dislikes": 60,
+    "desc": "Text de prova per el primer JSON, tercera experiencia"
+    } 
+
+]
