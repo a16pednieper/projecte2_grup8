@@ -8,9 +8,8 @@
     display: flex;
     position: relative;
     width: 100%;
-
-
 }
+
 .logo {
     display: block;
     padding: 10px 20px;
@@ -50,5 +49,9 @@
 .botonadmin{
     border: 1px solid white;
     margin-left: auto;
+    
+}
+
+input[type=button] {
     
 }

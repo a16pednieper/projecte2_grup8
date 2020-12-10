@@ -1,9 +1,4 @@
-<!doctype HTML>
-<html>
-<head>
-    <meta charset="UTF-8">
-</head>
-<body>
+
 <div class="footer1">
     
     <div class="integrantes">
@@ -22,7 +17,3 @@
     </div>
 
 </div>
-       
-</body>       
-        
-</html>
