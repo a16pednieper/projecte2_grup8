@@ -12,7 +12,15 @@
     <?php include 'php/header.php'; ?>
 
     
+    <?php 
+        $json = file_get_contents('prova.json');
+
+        $data = json_decode($json);
+
+       
+        print($json);
     
+    ?>
 
     
 
