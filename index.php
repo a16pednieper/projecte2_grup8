@@ -33,7 +33,11 @@
             die("Connection failed: " . $conn->connect_error);
           }
         echo "Connected successfully";
-        
+
+        $sql = " SELECT * FROM `CATEGORIA` ";
+        $result = $conn->query($sql);
+
+        echo $result;
 
         //$data = file_get_contents('prova.json');
         //$viajes = json_decode($data, true);
