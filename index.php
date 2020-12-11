@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PROJECTO 8</title>
+    <title>PROYECTO 8</title>
     <link rel="stylesheet" href="css/estilo.css">
 </head>
-
-
 
 <body>
     
@@ -24,21 +22,32 @@
 
     
     <?php 
-        $data = file_get_contents('prova.json');
-        $viajes = json_decode($data, true);
 
-        foreach ($viajes as $viaje) {
-            echo '<pre>';
-            print_r($viaje);
-            echo '</pre>';
+        $servername = "localhost";
+        $username = "a16pednieper_v2";
+        $password = "pedro";
 
-        }
-       
-       
+        $conn = new mysqli($servername, $username, $password);
+
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+          }
+        echo "Connected successfully";
+        
+
+        //$data = file_get_contents('prova.json');
+        //$viajes = json_decode($data, true);
+
+        //foreach ($viajes as $viaje) {
+         //   echo '<pre>';
+          //  print_r($viaje);
+           // echo '</pre>';
+
+        //}     
     
     ?>
 
-        <footer>
+        <footer class="footer1">
             <div class="integrantes">
         <h4> GRUP 8 </h4>
         <p> 
