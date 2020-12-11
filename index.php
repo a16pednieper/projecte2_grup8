@@ -30,7 +30,7 @@
         $conn = new mysqli($servername, $username, $password);
 
         if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
+        die("Connection failed: " . $conn->connect_error);
           }
         echo "Connected successfully";
 
@@ -38,34 +38,40 @@
         $result = $conn->query($sql);
 
         echo $result;
+          
+        $data = file_get_contents('prova.json');
+        $viajes = json_decode($data, true);
 
-        //$data = file_get_contents('prova.json');
-        //$viajes = json_decode($data, true);
+        foreach ($viajes as $viaje) {
+           echo '<pre>';
+          print_r($viaje);
+         echo '</pre>';
 
-        //foreach ($viajes as $viaje) {
-         //   echo '<pre>';
-          //  print_r($viaje);
-           // echo '</pre>';
+        }     
 
-        //}     
+        $sql = 'INSERT INTO USUARI (username, password) VALUES ( $usuari, $contra)';
+        $result = $conn->query($sql);
     
-    ?>
+        
 
+    ?>
+        <div class="principal">
+            <h1>Experiencies</h1>
+        </div>
         <footer class="footer1">
             <div class="integrantes">
-        <h4> GRUP 8 </h4>
-        <p> 
-        Bayron López <br> 
-        Enrique Rillo <br> 
-        Joel Rodriguez <br> 
-        Pedro Nieto
-        </p>   
-       
-    </div>
-    <div class="botonadmin">
-        <input type="button" value="ADMIN">
+                <h4> GRUP 8 </h4>
+                    <p> 
+                        Bayron López <br> 
+                        Enrique Rillo <br> 
+                        Joel Rodriguez <br> 
+                        Pedro Nieto
+                    </p>          
+            </div>
 
-    </div>
+            <div class="botonadmin">
+                <input type="button" value="ADMIN">
+            </div>
         </footer>
     
 

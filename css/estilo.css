@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .header1 {
@@ -52,6 +53,10 @@
     
 }
 
-input[type=button] {
-    
+.principal{
+    border: 3px solid red;
+    margin: 40px;
+    width: 90%;
+    padding: 10px;
+    height: 100%;
 }
