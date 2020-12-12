@@ -20,6 +20,18 @@
     
     </header> 
 
+
+    <form action="" method="post" name="registro" class="prueba">
+        <div class="formelement">
+            <label>Usuario</label>
+            <input type="text" name="usuario" required />
+        </div>
+        <div class="formelement">
+            <label>Contrasenya</label>
+            <input type="password" name="password" required />
+        </div>   
+        <button type="submit" name="registro" value="registro">Registrar</button>
+    </form>
     
     <?php 
 
