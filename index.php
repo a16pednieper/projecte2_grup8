@@ -35,34 +35,34 @@
     
     <?php 
 
-        $servername = "localhost";
-        $username = "a16pednieper_v2";
-        $password = "pedro";
+        // $servername = "localhost";
+        // $username = "a16pednieper_v2";
+        // $password = "pedro";
 
-        $conn = new mysqli($servername, $username, $password);
+        // $conn = new mysqli($servername, $username, $password);
 
-        if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-          }
-        echo "Connected successfully";
+        // if ($conn->connect_error) {
+        // die("Connection failed: " . $conn->connect_error);
+        //   }
+        // echo "Connected successfully";
 
-        $sql = " SELECT * FROM `CATEGORIA` ";
-        $result = $conn->query($sql);
+        // $sql = " SELECT * FROM `CATEGORIA` ";
+        // $result = $conn->query($sql);
 
-        echo $result;
+        // echo $result;
           
-        $data = file_get_contents('prova.json');
-        $viajes = json_decode($data, true);
+        // $data = file_get_contents('prova.json');
+        // $viajes = json_decode($data, true);
 
-        foreach ($viajes as $viaje) {
-           echo '<pre>';
-          print_r($viaje);
-         echo '</pre>';
+        // foreach ($viajes as $viaje) {
+        //    echo '<pre>';
+        //   print_r($viaje);
+        //  echo '</pre>';
 
-        }     
+        // }     
 
-        $sql = 'INSERT INTO USUARI (username, password) VALUES ( $usuari, $contra)';
-        $result = $conn->query($sql);
+        // $sql = 'INSERT INTO USUARI (username, password) VALUES ( $usuari, $contra)';
+        // $result = $conn->query($sql);
     
         
 
