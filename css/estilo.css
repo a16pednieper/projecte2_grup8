@@ -4,13 +4,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.header1 {
-    background-color: #00263C;
-    display: flex;
-    position: relative;
-    width: 100%;
-}
-
 .logo {
     display: block;
     padding: 10px 20px;
@@ -18,29 +11,21 @@
     margin: 0;
 }
 
-.titulo {
-    color: #fff;
-    font-size: 2.2em;
-    font-weight: bold;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
+.footer{
+    width: 100%;
     position: relative;
-    align-content: Center;
-    width: 100%;
-    padding-right: 150px;
-    background-color: #00263C;
-}
-
-.footer1 {
-    width: 100%;
-    position: fixed;
-    display: flex;
-    background: #00263C;
-    color: white;
-    padding: 10px 0px 10px 0px;
     bottom: 0;
 
 }
+.copyright {
+
+  width: 100%;
+  position: relative;
+  bottom: 0;
+
+}
+
+
 .integrantes {
     border: 1px solid white;
     padding: 10px;
@@ -72,3 +57,5 @@ table {
 td, th {
     border: black 1px solid;
 }
+
+

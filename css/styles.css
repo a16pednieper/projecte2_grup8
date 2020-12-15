@@ -69,22 +69,6 @@ body {
   background-color: #fff;
 }
 
-
-.footer{
-    width: 100%;
-    position: relative;
-    bottom: 0;
-
-}
-.copyright {
-
-  width: 100%;
-  position: relative;
-  bottom: 0;
-
-}
-
-
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
