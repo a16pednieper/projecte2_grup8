@@ -64,3 +64,11 @@
 .prueba {
     margin: 30px;
 }
+
+table {
+    border: black 1px solid;
+}
+
+td, th {
+    border: black 1px solid;
+}
