@@ -8,8 +8,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a href="formulari.php"><input type="button" value="LOGIN"></a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a href="formulari.php"><input type="button" value="REGISTRAR"></a></li>
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#miModal">Login</button>
+                        <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#miModal">Registrar</button>
                     </ul>
                 </div>
             </div>
