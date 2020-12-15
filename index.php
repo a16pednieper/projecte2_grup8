@@ -34,7 +34,7 @@
             <h1>Experiencies</h1>
             <?php 
 
-        $servername = "localhost";
+        $servername = "labs.iam.cat";
         $username = "a16pednieper_v2";
         $password = "pedro";
 
