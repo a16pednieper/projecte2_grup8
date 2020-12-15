@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,56 +8,57 @@
     <link rel="stylesheet" href="css/estilo.css">
     <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" />
     <link href="css/styles.css" rel="stylesheet" />
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    
+
 
 
 </head>
 
 <body>
-    
+
     <?php include 'header.php'; ?>
 
     <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content">
-			<div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-				<h4 class="modal-title" id="myModalLabel">Esto es un modal</h4>
-			</div>
-			<div class="modal-body">
-				Texto del modal
-			</div>
-		</div>
-	</div>
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Registro Usuario</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="registro.php" method="post" name="registro" class="prueba">
+                        <div class="formelement">
+                            <label>Usuario</label>
+                            <input type="text" name="usuari" required />
+                        </div>
+                        <div class="formelement">
+                            <label>Contrasenya</label>
+                            <input type="password" name="pass" required />
+                        </div>
+                        <button type="submit" name="registro" value="registro">Registrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </div>
 
 
 
-    <!-- <form action="registro.php" method="post" name="registro" class="prueba">
-        <div class="formelement">
-            <label>Usuario</label>
-            <input type="text" name="usuari" required />
-        </div>
-        <div class="formelement">
-            <label>Contrasenya</label>
-            <input type="password" name="pass" required />
-        </div>   
-        <button type="submit" name="registro" value="registro">Registrar</button>
-    </form> -->
-  
-    
+
+
+
     <br>
-        <div class="principal">
-            <h1>Experiencies</h1>
-            <?php 
+    <div class="principal">
+        <h1>Experiencies</h1>
+        <?php 
 
         // $servername = "labs.iam.cat";
         // $username = "a16pednieper_v2";
@@ -91,7 +93,7 @@
 
     ?>
 
-    <?php
+        <?php
         $contenido = file_get_contents("prova.json");
         $con = $contenido;
         $datos = json_decode($con, true);
@@ -127,10 +129,11 @@
             </tbody>
         </table>
 
-        </div>
+    </div>
 
-        <?php include 'footer.php'; ?>
-        
+    <?php include 'footer.php'; ?>
+
 
 </body>
+
 </html>
