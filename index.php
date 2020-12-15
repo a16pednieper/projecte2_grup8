@@ -44,7 +44,11 @@
         <button type="submit" name="registro" value="registro">Registrar</button>
     </form>
     
-    <?php 
+    
+    <br>
+        <div class="principal">
+            <h1>Experiencies</h1>
+            <?php 
 
         $servername = "localhost";
         $username = "a16pednieper_v2";
@@ -78,9 +82,7 @@
         
 
     ?>
-    <br>
-        <div class="principal">
-            <h1>Experiencies</h1>
+
         </div>
 
         <footer class="footer text-center">
