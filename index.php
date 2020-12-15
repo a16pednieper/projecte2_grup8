@@ -67,6 +67,42 @@
 
     ?>
 
+    <?php
+        $contenido = file_get_contents("prova.json");
+        $con = $contenido;
+        $datos = json_decode($con, true);
+        $hay = count($datos["Experiencies"]);
+        $exps = $datos["Experiencies"];
+        ?>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Categoria</th>
+                    <th>Imatge</th>
+                    <th>Data</th>
+                    <th>Likes</th>
+                    <th>Dislikes</th>
+                    <th>Descripcio</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php
+                foreach($exps as $exp){
+                    echo "<tr>";
+                    echo "<td>$exp[Nom]</td>";
+                    echo "<td>$exp[Categoria]</td>";
+                    echo "<td>$exp[Imatge]</td>";
+                    echo "<td>$exp[Data]</td>";
+                    echo "<td>$exp[Likes]</td>";
+                    echo "<td>$exp[Dislikes]</td>";
+                    echo "<td>$exp[Descripcio]</td>";
+                    echo "</tr>";
+                }
+                ?>
+            </tbody>
+        </table>
+
         </div>
 
         <?php include 'footer.php'; ?>

@@ -1,32 +1,33 @@
-[
-    {
-    "nom": "Viaje playa",
-    "categoria": "playa",
-    "imatge": "https://picsum.photos/400/400",
-    "data": "",
-    "likes": 2,
-    "dislikes": 1,
-    "desc": "Text de prova per el primer JSON"
-    },
+{
+    "Experiencies":{
+        "Exp1":{
+            "Nom": "Viaje playa",
+            "Categoria": "playa",
+            "Imatge": "https://picsum.photos/400/400",
+            "Data": "",
+            "Likes": 2,
+            "Dislikes": 1,
+            "Descripcio": "Text de prova per el primer JSON"
+        },
 
-    {
-    "nom": "Viaje montaña",
-    "categoria": "montaña",
-    "imatge": "https://picsum.photos/400/400",
-    "data": "",
-    "likes": 5,
-    "dislikes": 2,
-    "desc": "Text de prova per el primer JSON, segona experiencia"
-    },
+        "Exp2":{
+            "Nom": "Viaje montaña",
+            "Categoria": "montaña",
+            "Imatge": "https://picsum.photos/400/400",
+            "Data": "",
+            "Likes": 5,
+            "Dislikes": 2,
+            "Descripcio": "Text de prova per el primer JSON, segona experiencia"
+        },
 
-    {
-    "nom": "Viaje TorreMolinos",
-    "categoria": "historico",
-    "imatge": "https://picsum.photos/400/400",
-    "data": "",
-    "likes": 10,
-    "dislikes": 60,
-    "desc": "Text de prova per el primer JSON, tercera experiencia"
-    } 
-
-]
+        "Exp3":{
+            "Nom": "Viaje TorreMolinos",
+            "Categoria": "historico",
+            "Imatge": "https://picsum.photos/400/400",
+            "Data": "",
+            "Likes": 10,
+            "Dislikes": 60,
+            "Descripcio": "Text de prova per el primer JSON, tercera experiencia"
+        } 
+    }
+}
