@@ -47,8 +47,10 @@
             protected function resultados_query(){
                 $this->abrir_conexion();
                 $result = $this->conn->query($this->query);
+
                 for ($i=0; $i < $result->num_rows ; $i++)  
-                    $this->rows[$i]=$result->fetch_assoc();                
+                    $this->rows[$i]=$result->fetch_assoc();       
+                             
                 $result->close();
                 $this->cerrar_conexion();                
             }

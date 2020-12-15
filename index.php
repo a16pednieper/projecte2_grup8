@@ -16,7 +16,7 @@
     <?php include 'header.php'; ?>
 
 
-    <form action="" method="post" name="registro" class="prueba">
+    <form action="registro.php" method="post" name="registro" class="prueba">
         <div class="formelement">
             <label>Usuario</label>
             <input type="text" name="usuari" required />
