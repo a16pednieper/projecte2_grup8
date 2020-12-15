@@ -9,7 +9,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a href="formulari.php"><input type="button" value="LOGIN"></a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><input type="button" value="REGISTRAR"></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a href="formulari.php"><input type="button" value="REGISTRAR"></a></li>
                     </ul>
                 </div>
             </div>
