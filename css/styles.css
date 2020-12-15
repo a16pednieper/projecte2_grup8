@@ -72,14 +72,14 @@ body {
 
 .footer{
     width: 100%;
-    position: fixed;
+    position: relative;
     bottom: 0;
 
 }
 .copyright {
 
   width: 100%;
-  position: fixed;
+  position: relative;
   bottom: 0;
 
 }
