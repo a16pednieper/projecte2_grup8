@@ -13,23 +13,7 @@
 
 <body>
     
-    <header class="header1">  
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <a href="#index.php"><div class="logo"><img src="img/logo1.png" width="160px"></div></a>
-                <button class="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a href="formulari.php"><input type="button" value="LOGIN"></a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><input type="button" value="REGISTRAR"></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>  
-    </header> 
+    <?php include 'header.php'; ?>
 
 
     <form action="" method="post" name="registro" class="prueba">
@@ -85,45 +69,8 @@
 
         </div>
 
-        <footer class="footer text-center">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-4 mb-5 mb-lg-0">
-                        <h4 class="text-uppercase mb-4">Ubicació</h4>
-                        <p class="lead mb-0">
-                            Institut Pedralbes
-                            <br />
-                            Barcelona
-                        </p>
-                    </div>
-                    <div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">Membres del Grup 8</h4>
-                        <p class="lead mb-0">
-                            Pedro Nieto, Joel Rodríguez, Enrique Rillo i Bayron Lopez
-                        </p>
-                    </div>
-                    <div class="col-lg-4">
-                        <input type="button" value="ADMIN">
-                    </div>
-                </div>
-            </div>            
-        </footer>
+        <?php include 'footer.php'; ?>
         
-        <!-- Copyright Section-->
-        <div class="copyright py-4 text-center text-white">
-        <div class="container"><small>Copyright © Institut Pedralbes 2020</small></div>
-        </div>
-        <div class="scroll-to-top d-lg-none position-fixed">
-        <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a>
-        </div>
-    
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-
-    
 
 </body>
 </html>
