@@ -1,56 +1,66 @@
 <?php
-    require once ('viatges.php');
 
-    class usuaris extends viatges {
+    // require once ('viatges.php');
 
-        private $username;
-        private $password;
-        private $nom;
-        private $admin;
+    // class usuaris extends viatges {
 
-        function __construct () {
-            $this->dbname = "a16pednieper_v2";
-        }
+    //     private $username;
+    //     private $password;
+    //     private $nom;
+    //     private $admin;
 
-        function __toString () {
-            return "(" . $this->username . ", " . $this->password . ", " . $this->nom . ", " .
-                         $this->admin . ")";
-        }
+    //     function __construct () {
+    //         $this->dbname = "a16pednieper_v2";
+    //     }
 
-        function __destruct (){
-            //unset ($this);
-        }
+    //     function __toString () {
+    //         return "(" . $this->username . ", " . $this->password . ", " . $this->nom . ", " .
+    //                      $this->admin . ")";
+    //     }
+
+    //     function __destruct (){
+    //         //unset ($this);
+    //     }
         
 
-        // Seleccionar un registro de la tabla
-        public function select ($username="") {
-            if($username != "") {
-               $this->query="SElECT username, password, nom FROM USUARI WHERE nom = '$username'";
-               $this->resultados_query();
-            }
-            if (count($this->rows)==1) {
-                foreach ($this->rows[0] as $property => $value)
-                    $this->$property = $value;
-            }
-        }
+    //     // Seleccionar un registro de la tabla
+    //     public function select ($username="") {
+    //         if($username != "") {
+    //            $this->query="SElECT username, password, nom FROM USUARI WHERE nom = '$username'";
+    //            $this->resultados_query();
+    //         }
+    //         if (count($this->rows)==1) {
+    //             foreach ($this->rows[0] as $property => $value)
+    //                 $this->$property = $value;
+    //         }
+    //     }
 
-        // Insertar un Usuario
+    //     // Insertar un Usuario
+    //     public function insert ($userData=array()) {
+    //         if (array_key_exists("username", $userData)) {
+    //             $this->select($userData['username']);
 
-        public function insert ($userData=array()) {
-            if (array_key_exists("username", $userData)) {
-                $this->select($userData['username']);
+    //             if($userData['username'] != $this->username) {
+    //                 $property = $value;
+    //                 $this->query="INSERT INTO USUARI (username, password, admin)
+    //                               VALUES ('$username', '$password', 0 )";
+    //                 $this->ejecutar_query();
+    //             }
+    //         }
+    //     }
 
-                if($userData['username'] != $this->username) {
-                    $property = $value;
-                    $this->query="INSERT INTO USUARI (username, password, admin)
-                                  VALUES ('$username', '$password', 0 )";
-                    $this->ejecutar_query();
-                }
-            }
-        }
+    //     // Modificar un usuario
+    //     // public function update ($userData=array()) {
+    //     //     foreach ($userData AS $property => $value)
+    //     //         $
+    //     // }
+
+
+
+
         
         
 
-    }
+    // }
 
 ?>

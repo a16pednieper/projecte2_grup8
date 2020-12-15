@@ -34,16 +34,16 @@
             <h1>Experiencies</h1>
             <?php 
 
-        $servername = "labs.iam.cat";
-        $username = "a16pednieper_v2";
-        $password = "pedro";
+        // $servername = "labs.iam.cat";
+        // $username = "a16pednieper_v2";
+        // $password = "pedro";
 
-        $conn = new mysqli($servername, $username, $password);
+        // $conn = new mysqli($servername, $username, $password);
 
-        if ($conn->connect_error) {
-        die("Connection failed: " . $conn->connect_error);
-          }
-        echo "Connected successfully";
+        // if ($conn->connect_error) {
+        // die("Connection failed: " . $conn->connect_error);
+        //   }
+        // echo "Connected successfully";
 
         // $sql = " SELECT * FROM `CATEGORIA` ";
         // $result = $conn->query($sql);
@@ -92,7 +92,7 @@
                     echo "<tr>";
                     echo "<td>$exp[Nom]</td>";
                     echo "<td>$exp[Categoria]</td>";
-                    echo "<td>$exp[Imatge]</td>";
+                    echo "<td><img src='$exp[Imatge]'></img></td>";
                     echo "<td>$exp[Data]</td>";
                     echo "<td>$exp[Likes]</td>";
                     echo "<td>$exp[Dislikes]</td>";
