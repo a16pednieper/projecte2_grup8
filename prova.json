@@ -4,7 +4,7 @@
             "Nom": "Viaje playa",
             "Categoria": "playa",
             "Imatge": "https://picsum.photos/400/400",
-            "Data": "",
+            "Data": "15/12/2020",
             "Likes": 2,
             "Dislikes": 1,
             "Descripcio": "Text de prova per el primer JSON"
@@ -14,7 +14,7 @@
             "Nom": "Viaje montaña",
             "Categoria": "montaña",
             "Imatge": "https://picsum.photos/400/400",
-            "Data": "",
+            "Data": "15/12/2020",
             "Likes": 5,
             "Dislikes": 2,
             "Descripcio": "Text de prova per el primer JSON, segona experiencia"
@@ -24,7 +24,7 @@
             "Nom": "Viaje TorreMolinos",
             "Categoria": "historico",
             "Imatge": "https://picsum.photos/400/400",
-            "Data": "",
+            "Data": "15/12/2020",
             "Likes": 10,
             "Dislikes": 60,
             "Descripcio": "Text de prova per el primer JSON, tercera experiencia"
