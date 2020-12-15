@@ -8,7 +8,7 @@
             private static $password = "pedro";
 
             //Nom Base de Dades
-            protected $dbname = "a16pednieper_v2";
+            protected $dbname;
 
             //Query que se ejecutara
             protected $query;
@@ -17,13 +17,7 @@
             protected $rows=array();
 
             //Conexion BBDD
-            private $conn;
-
-            //Metodos Abstractos
-            abstract protected function select();
-            abstract protected function insert();
-            abstract protected function update();
-            abstract protected function delete();
+            private $conn;            
 
             //Metodo privado para abrir conexion
             private function abrir_conexion() {
@@ -34,7 +28,6 @@
             private function cerrar_conexion() {
                 $this->conn->close();
             }
-
 
             //Ejecutar Insert, Update, Delete
             private function ejecutar_query(){
