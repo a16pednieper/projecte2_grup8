@@ -1,10 +1,9 @@
 <?php
 include("conexion.php");
 
-if (isset($_POST["registrar"])) {
-	$nombre = mysqli_real_escape_string($conexion,$_POST['nombre']);
-	$correo = mysqli_real_escape_string($conexion,$_POST['correo']);
-	$usuario = mysqli_real_escape_string($conexion,$_POST['user']);
+if (isset($_POST["registro"])) {
+	
+	$usuario = mysqli_real_escape_string($conexion,$_POST['usuari']);
 	$password = mysqli_real_escape_string($conexion,$_POST['pass']);
 	$password_encriptada= sha1($password);
 	$sqluser = "SELECT idusuarios FROM usuarios WHERE usuario = '$usuario'";
@@ -18,7 +17,7 @@ if (isset($_POST["registrar"])) {
 		</script>";
 	}else {
 		//insertamos información del usuario
-		$sqlusuario = "INSERT INTO usuarios(Nombre,Correo,Usuario,Password) VALUES ('$nombre','$correo','$usuario','$password_encriptada')";
+		$sqlusuario = "INSERT INTO usuarios(Usuario,Password) VALUES ('$usuario','$password_encriptada')";
 	
 		$resultadousuario = $conexion->query($sqlusuario);
 		if ($resultadousuario > 0) {
