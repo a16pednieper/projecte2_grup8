@@ -2,8 +2,8 @@
 
     require_once('checkusuari.php');
 
-    $usuari = $_REQUEST['usuari'];
-    $password = $_REQUEST['password'];
+    $usuari = $_POST['usuari'];
+    $password = $_POST['password'];
 
 
     if ($usuari != "" && $password != "") {
