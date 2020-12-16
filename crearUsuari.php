@@ -8,7 +8,8 @@
             <input type="text" name="nom">
             <br>
 			<label for="cognom1"> Password </label>
-            <input type="text" name="password">
+            <input type="password" name="password">
+            <br>
             <input type="submit" value="Crear">
             <br>            
         </form> 
