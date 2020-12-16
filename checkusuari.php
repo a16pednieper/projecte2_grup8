@@ -29,8 +29,18 @@ class usuari extends viatges {
         return $this->iniciarsession($usuari, $password);
     }
 
-    public function existe_usuario ($usuari) {
-            $this->query = ""
+    public function existe_usuario ($usuari){
+        $this->query = "SELECT * FROM USUARI WHERE nom='$usuari'";
+        $this->get_results_from_query();
+
+        if (count($this->rows)==1) {
+            foreach ($this->rows[0] as $property => $value)
+            $this->$property = $value;
+            return $this->rows;
+        }
+        else{
+            return false;
+        }
     }
 }
 
