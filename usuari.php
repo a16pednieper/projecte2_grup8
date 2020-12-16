@@ -20,6 +20,10 @@
             return $this->rows;
         }
 
+        public function eliminarusuari($id) {
+            $this->query = "DELETE FROM USUARI WHERE id = $id";
+            $this->ejecutar_query();
+        }
 
         
         
