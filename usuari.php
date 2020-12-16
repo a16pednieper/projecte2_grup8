@@ -34,8 +34,42 @@
                 };
 
             if ($nom != "") {
-                
-            }    
+
+                $this->query = "SELECT * FROM USUARI WHERE nom='$nom'";
+
+                if (count($this->rows) == 1) {
+                    $result= "true";
+                };
+
+            } else {
+
+                $this->query = "SELECT * FROM CONTACTES WHERE nom='$nom'";
+                $this->get_results_from_query();
+
+            };            
+            return array($result, $this-> rows);
+        }
+
+        public function insert($usuariData = array()) {
+
+            if (array_key_exists("nom", $usuariData)) {
+                $this->selectByData($usuariData);
+                if($usuariData["nom"] != $this->nom) {
+                    foreach ($usuariData as $property => $value)
+                        $$property = $value;
+                    $this->query = "INSERT INTO USUARI ( id, nom, contrasenya)
+                    VALUES ('', '$nom', '$password')";
+                    $this->execute_single_query();
+            }
+          }
+        }
+
+        public function delete ($usuariNom="") {
+            $this->query = "DELETE FROM USUARI WHERE nom = '$usuariNom'";
+            $this->execute_single_query($this->query);
+        }
+
+        public function update ($usuariData = array()) {
 
         }
 

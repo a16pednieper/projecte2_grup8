@@ -34,17 +34,9 @@
                     <h4 class="modal-title" id="myModalLabel">Registro Usuario</h4>
                 </div>
                 <div class="modal-body">
-                    <form action="registro.php" method="POST" name="registro" class="prueba">
-                        <div class="formelement">
-                            <label>Usuario</label>
-                            <input type="text" name="usuari" required />
-                        </div>
-                        <div class="formelement">
-                            <label>Contrasenya</label>
-                            <input type="password" name="password" required />
-                        </div>
-                        <button type="submit" name="registro" value="registro">Registrar</button>
-                    </form>
+                    <?php
+                        include 'crearUsuari.php';
+                    ?>
                 </div>
             </div>
         </div>
