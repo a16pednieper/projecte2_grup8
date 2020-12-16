@@ -26,7 +26,7 @@
 
             //Metodo privado para abrir conexion
             private function open_connection() {
-                $this->conn = new msqli (self::$servidor, self::$user, self::$password, self::$dbname);
+                $this->conn = new msqli (self::$servidor, self::$user, self::$password, self::$db_name);
             }
 
             //Metodo privado para cerrar conexion

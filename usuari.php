@@ -14,7 +14,7 @@
 
         function __toString() {
             echo "Entro String <br>";
-            return "(" . $this->id . ", " . $this->nom . ", " . $this->password . ")";
+            return "(" . $this->nom . ", " . $this->password . ")";
         }
 
         public function select() {
