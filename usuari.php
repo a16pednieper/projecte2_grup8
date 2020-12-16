@@ -58,7 +58,7 @@
                     foreach ($usuariData as $property => $value)
                         $$property = $value;
                     $this->query = "INSERT INTO USUARI (nom, contrasenya)
-                    VALUES ($nom', '$password')";
+                    VALUES ('$nom', '$password')";
                     $this->execute_single_query();
             }
           }
