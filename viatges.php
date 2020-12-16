@@ -3,7 +3,7 @@
     abstract class viatges {
 
         //Credencials Base De Dades
-            private static $db_host = "localhost";
+            private static $db_host = "labs.iam.cat";
             private static $db_user = "a16pednieper_v2";
             private static $db_pass = "pedro";
 
