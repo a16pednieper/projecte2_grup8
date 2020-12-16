@@ -36,6 +36,14 @@ td, th {
     border: black 1px solid;
 }
 
+.cabecera{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.avion{
+    margin-left: 20px;
+}
 
 /* .footer{
     width: 100%;

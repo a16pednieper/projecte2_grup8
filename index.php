@@ -57,7 +57,11 @@
 
     <br>
     <div class="principal">
-        <h1>Experiencies</h1>
+        <div class="cabecera">
+            <h1>Experiencies</h1>
+            <img src="img/avion.gif" alt="avion" width="200" class="avion">
+        </div>
+
         <?php 
 
         // $servername = "labs.iam.cat";
