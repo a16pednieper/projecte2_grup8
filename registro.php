@@ -1,19 +1,30 @@
 <?php
 
-    include('usuaris.php');
+    require_once('checkusuari.php');
+
+    $usuari = $_REQUEST['usuari'];
+    $password = $_REQUEST['password'];
 
 
-    if (isset($_POST['registro'])) {
+    if ($usuari != "" && $password != "") {
 
-        $usuari = $_POST['usuario'];
-        $contrasenya = md5($_POST['password']);
+        $user = new Usuari();
 
-       $user1 = new usuari ();
+        if ($usuari->existe_usuario($usuari) == false) {
+            $resultusuari = $usuari->registro($usuari, $password);
 
-       $datos = array ("username" => $usuari, "password" => $contrasenya, "admin"=>0);
-       $user1->insert($datos);
+            if ($resultusuari == false) {
+                echo "NOPE";
+            } else {
+                echo "OKAY";
+            }
+        } else {
+            echo "EXISTE";
+        }
 
+
+    } else {
+        echo "EMPTY";
     }
-
 
 ?>
