@@ -9,6 +9,7 @@
             <br>
 			<label for="cognom1"> Password </label>
             <input type="text" name="password">
+            <input type="submit" value="Crear">
             <br>            
         </form> 
 		
