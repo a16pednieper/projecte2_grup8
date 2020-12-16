@@ -2,18 +2,18 @@
 
     require_once('checkusuari.php');
 
-    $usuari = $_POST['usuari'];
-    $password = $_POST['password'];
+    $usuari = $_REQUEST['usuari'];
+    $password = $_REQUEST['password'];
 
 
     if ($usuari != "" && $password != "") {
 
         $user = new Usuari();
 
-        if ($usuari->existe_usuario($usuari) == false) {
-            $resultusuari = $usuari->registro($usuari, $password);
+        if ($user->existUsuari($usuari) == false) {
+            $resultUser = $user->registro($usuari, $password);
 
-            if ($resultusuari == false) {
+            if ($resultUser == false) {
                 echo "NOPE";
             } else {
                 echo "OKAY";

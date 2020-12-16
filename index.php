@@ -34,7 +34,7 @@
                     <h4 class="modal-title" id="myModalLabel">Registro Usuario</h4>
                 </div>
                 <div class="modal-body">
-                    <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post" name="registro" class="prueba">
+                    <form action="registro.php" method="POST" name="registro" class="prueba">
                         <div class="formelement">
                             <label>Usuario</label>
                             <input type="text" name="usuari" required />
