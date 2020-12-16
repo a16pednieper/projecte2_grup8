@@ -15,8 +15,8 @@
                             Pedro Nieto, Joel Rodríguez, Enrique Rillo i Bayron Lopez
                         </p>
                     </div>
-                    <div class="col-lg-4">
-                        <input type="button" value="ADMIN">
+                    <div class="botonadmin">
+                    <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#miModal">ADMIN</button>
                     </div>
                 </div>
             </div>            
