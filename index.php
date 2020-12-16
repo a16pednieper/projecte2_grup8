@@ -41,7 +41,7 @@
                         </div>
                         <div class="formelement">
                             <label>Contrasenya</label>
-                            <input type="password" name="pass" required />
+                            <input type="password" name="password" required />
                         </div>
                         <button type="submit" name="registro" value="registro">Registrar</button>
                     </form>

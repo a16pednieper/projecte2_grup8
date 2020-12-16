@@ -2,7 +2,7 @@
 
     require once ('viatges.php');
 
-    class usuari extends viatges {        
+    class Usuari extends viatges {        
 
         function __construct () {
             $this->dbname = "a16pednieper_v2";
