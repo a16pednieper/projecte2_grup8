@@ -1,32 +1,43 @@
 <?php
 
-    require once ('viatges.php');
+    require_once('viatges.php');
 
-    class Usuari extends viatges {        
+    class Usuari extends Viatges {  
+        
+        private $id;
+        private $nom;
+        private $password;      
 
         function __construct () {
             $this->dbname = "a16pednieper_v2";
         }
 
-        public function selectusuaris() {
-            $this->query = "SELECT id, nom FROM USUARI";
-            $this->resultados_query();
+        function __toString() {
+            echo "Entro String <br>";
+            return "(" . $this->id . ", " . $this->nom . ", " . $this->password . ")";
+        }
 
-            if (count($this->rows)==1) {
-                foreach ($this->rows[0] as $property => $value)
-                $this->$property = $value;
-            }
+        public function select() {
+            $this->query = "SELECT * FROM USUARI";
+            $this->get_results_from_query();
 
             return $this->rows;
         }
 
-        public function eliminarusuari($id) {
-            $this->query = "DELETE FROM USUARI WHERE id = $id";
-            $this->ejecutar_query();
-        }
+        public function selectByData($usuariData = array()) {
 
-        
-        
+            $result = "false";
+            $nom = "";
+
+                foreach($usuariData as $property => $value) {
+                    $$property = $value;
+                };
+
+            if ($nom != "") {
+                
+            }    
+
+        }
 
     }
 
