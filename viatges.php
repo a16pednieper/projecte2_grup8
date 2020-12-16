@@ -3,9 +3,9 @@
     abstract class viatges {
 
         //Credencials Base De Dades
-            private static $servidor = "localhost";
-            private static $user = "a16pednieper_v2";
-            private static $password = "pedro";
+            private static $db_host = "localhost";
+            private static $db_user = "a16pednieper_v2";
+            private static $db_pass = "pedro";
 
             //Nom Base de Dades
             protected $db_name;
@@ -26,7 +26,7 @@
 
             //Metodo privado para abrir conexion
             private function open_connection() {
-                $this->conn = new msqli (self::$servidor, self::$user, self::$password, self::$db_name);
+                $this->conn = new msqli (self::$db_host, self::$db_user, self::$db_pass, $this->$db_name);
             }
 
             //Metodo privado para cerrar conexion
