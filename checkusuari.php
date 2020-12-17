@@ -52,7 +52,7 @@ class Usuari extends viatges {
 //             return false;
 //         }
 //     }
-// }
+}
 
 
 ?>
