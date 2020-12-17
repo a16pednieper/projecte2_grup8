@@ -1,6 +1,6 @@
 <?php
 
-include "viatges.php";
+require_once("viatges.php");
 
 class Usuari extends viatges {
 
