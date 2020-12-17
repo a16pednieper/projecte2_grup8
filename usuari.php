@@ -52,6 +52,7 @@
 
         public function insert($usuariData = array()) {
 
+            echo "Estoy haciendo INSERT";
             foreach ($usuariData as $property => $value)
             $$property = $value;
             $this->query = "INSERT INTO USUARI (nom, contrasenya)
