@@ -14,7 +14,7 @@
 
         $user = new Usuari();
 
-        $user => registro($datos);
+        $user -> registro($datos);
 
     }
     //     if ($user->existUsuari($usuari) == false) {
