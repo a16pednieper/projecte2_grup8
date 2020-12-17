@@ -35,7 +35,7 @@ class Usuari extends viatges {
         foreach($datos as $property => $value)
         $$property = $value;
         
-        $this->query = "INSERT INTO USUARI (nom, contrasenya) VALUES ('$nom', '$contrasenya')";
+        $this->query = "INSERT INTO USUARI (nom, contrasenya) VALUES ('$nom', '$contrasenya');";
         $this->execute_single_query();
     }
 

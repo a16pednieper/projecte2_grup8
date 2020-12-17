@@ -36,7 +36,7 @@
             }
 
             //Ejecutar Insert, Update, Delete
-            private function execute_single_query(){
+            protected function execute_single_query(){
                 $this->open_connection();
                 $this->conn->query($this->query);
                 $this->close_connection();
