@@ -22,15 +22,16 @@
 		}
        
     $usuari = new Usuari();
-    $existeix = $usuari -> selectByData($_POST);
+    //$existeix = $usuari -> selectByData($_POST);
+    $usuari -> insert($_POST);
 
-    if ($existeix[0] =="true") {
+    // if ($existeix[0] =="true") {
 		
-		$result = "EL usuari ja existeix";
-		} else {
+	// 	$result = "EL usuari ja existeix";
+	// 	} else {
     
-			$result = $usuari -> insert($_POST);
-    }
+	// 		$result = $usuari -> insert($_POST);
+    // }
     
     
     //echo json_encode($result);

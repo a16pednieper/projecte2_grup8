@@ -52,16 +52,23 @@
 
         public function insert($usuariData = array()) {
 
-            if (array_key_exists("nom", $usuariData)) {
-                $this->selectByData($usuariData);
-                if($usuariData["nom"] != $this->nom) {
-                    foreach ($usuariData as $property => $value)
-                        $$property = $value;
-                    $this->query = "INSERT INTO USUARI (nom, contrasenya)
-                    VALUES ('$nom', '$password')";
-                    $this->execute_single_query();
-            }
-          }
+            foreach ($usuariData as $property => $value)
+            $$property = $value;
+            $this->query = "INSERT INTO USUARI (nom, contrasenya)
+            VALUES ('$nom', '$password')";
+            $this->execute_single_query();
+            
+
+            // if (array_key_exists("nom", $usuariData)) {
+            //     $this->selectByData($usuariData);
+            //     if($usuariData["nom"] != $this->nom) {
+            //         foreach ($usuariData as $property => $value)
+            //             $$property = $value;
+            //         $this->query = "INSERT INTO USUARI (nom, contrasenya)
+            //         VALUES ('$nom', '$password')";
+            //         $this->execute_single_query();
+            // }
+            // }
         }
 
         public function delete ($usuariNom="") {
