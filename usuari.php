@@ -1,6 +1,6 @@
 <?php
 
-    require_once('viatges.php');
+    require_once('Viatges.php');
 
     class Usuari extends Viatges {  
         
@@ -55,7 +55,7 @@
             foreach ($usuariData as $property => $value)
             $$property = $value;
             $this->query = "INSERT INTO USUARI (nom, contrasenya)
-            VALUES ('$nom', '$password')";
+            VALUES ('enrique', 'enrique')";
             $this->execute_single_query();
             
 
