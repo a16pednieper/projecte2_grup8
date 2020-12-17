@@ -6,7 +6,8 @@
     require_once('checkusuari.php');
 
     $usuari = $_POST['nom'];
-    $password = $_POST['password'];
+    $password = md5($_POST['password']);
+    
 
     $datos = array('nom'=>$usuari,'contrasenya'=>$password);
 
