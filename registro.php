@@ -1,5 +1,8 @@
 <?php
 
+    error_reporting(-1);
+    ini_set('display_errors','on');
+
     require_once('checkusuari.php');
 
     $usuari = $_REQUEST['usuari'];
