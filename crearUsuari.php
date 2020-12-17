@@ -3,7 +3,7 @@
 	if (!$_POST) { ?>
 		
 		<h2>Crear contacte</h2>
-        <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="post">
+        <form action="registro.php" method="post">
             <label for="nom">Nom </label>
             <input type="text" name="nom">
             <br>
