@@ -4,11 +4,11 @@ include "viatges.php";
 
 class Usuari extends viatges {
 
-
+    private $id;
     private $nom;
     private $contrasenya;
 
-    function _construct() {
+    function __construct() {
         $this->db_name = "a16pednieper_v2";
     }
 
@@ -25,6 +25,11 @@ class Usuari extends viatges {
     //         return false;
     //     }
     // }
+    
+    function __toString(){
+        return "(" . $this->id . ", " . $this->nom . ", " . $this->contrasenya . ")";
+    }
+
 
     public function registro ($datos= array()) {
         foreach($datos as $property => $value)
