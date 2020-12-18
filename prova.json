@@ -28,6 +28,36 @@
             "Likes": 10,
             "Dislikes": 60,
             "Descripcio": "Text de prova per el primer JSON, tercera experiencia"
+        },
+
+        "Exp4":{
+            "Nom": "China chin chun",
+            "Categoria": "asiaticos",
+            "Imatge": "https://picsum.photos/400/400",
+            "Data": "15/12/2020",
+            "Likes": 19,
+            "Dislikes": 20,
+            "Descripcio": "Text de prova per el primer JSON, tercera experiencia"
+        },
+
+        "Exp5":{
+            "Nom": "Morolandia",
+            "Categoria": "moros",
+            "Imatge": "https://picsum.photos/400/400",
+            "Data": "15/12/2020",
+            "Likes": 19,
+            "Dislikes": 20,
+            "Descripcio": "Text de prova per el primer JSON, tercera experiencia"
+        },
+
+        "Exp6":{
+            "Nom": "Africa central",
+            "Categoria": "niggas in the hood",
+            "Imatge": "https://picsum.photos/400/400",
+            "Data": "15/12/2020",
+            "Likes": 19,
+            "Dislikes": 20,
+            "Descripcio": "Text de prova per el primer JSON, tercera experiencia"
         } 
     }
 }

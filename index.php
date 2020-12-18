@@ -49,76 +49,80 @@
             <img src="img/avion.gif" alt="avion" width="200" class="avion">
         </div>
 
-        <?php 
+            <?php 
 
-        // $servername = "labs.iam.cat";
-        // $username = "a16pednieper_v2";
-        // $password = "pedro";
+            // $servername = "labs.iam.cat";
+            // $username = "a16pednieper_v2";
+            // $password = "pedro";
 
-        // $conn = new mysqli($servername, $username, $password);
+            // $conn = new mysqli($servername, $username, $password);
 
-        // if ($conn->connect_error) {
-        // die("Connection failed: " . $conn->connect_error);
-        //   }
-        // echo "Connected successfully";
+            // if ($conn->connect_error) {
+            // die("Connection failed: " . $conn->connect_error);
+            //   }
+            // echo "Connected successfully";
 
-        // $sql = " SELECT * FROM `CATEGORIA` ";
-        // $result = $conn->query($sql);
+            // $sql = " SELECT * FROM `CATEGORIA` ";
+            // $result = $conn->query($sql);
 
-        // echo $result;
-          
-        // $data = file_get_contents('prova.json');
-        // $viajes = json_decode($data, true);
+            // echo $result;
+            
+            // $data = file_get_contents('prova.json');
+            // $viajes = json_decode($data, true);
 
-        // foreach ($viajes as $viaje) {
-        //    echo '<pre>';
-        //   print_r($viaje);
-        //  echo '</pre>';
+            // foreach ($viajes as $viaje) {
+            //    echo '<pre>';
+            //   print_r($viaje);
+            //  echo '</pre>';
 
-        // }     
+            // }     
 
-        // $sql = 'INSERT INTO USUARI (username, password) VALUES ( $usuari, $contra)';
-        // $result = $conn->query($sql);
-    
+            // $sql = 'INSERT INTO USUARI (username, password) VALUES ( $usuari, $contra)';
+            // $result = $conn->query($sql);
         
+            ?>
+            
+            <div class="experiences">
 
-    ?>
-
-        <?php
-        $contenido = file_get_contents("prova.json");
-        $con = $contenido;
-        $datos = json_decode($con, true);
-        $hay = count($datos["Experiencies"]);
-        $exps = $datos["Experiencies"];
-        ?>
-        <table>
-            <thead>
-                <tr>
-                    <th>Nom</th>
-                    <th>Categoria</th>
-                    <th>Imatge</th>
-                    <th>Data</th>
-                    <th>Likes</th>
-                    <th>Dislikes</th>
-                    <th>Descripcio</th>
-                </tr>
-            </thead>
-            <tbody>
-                <?php
+            <?php
+            $contenido = file_get_contents("prova.json");
+            $con = $contenido;
+            $datos = json_decode($con, true);
+            $hay = count($datos["Experiencies"]);
+            $exps = $datos["Experiencies"];
+            ?>
+                
+            <?php
                 foreach($exps as $exp){
-                    echo "<tr>";
-                    echo "<td>$exp[Nom]</td>";
-                    echo "<td>$exp[Categoria]</td>";
-                    echo "<td><img src='$exp[Imatge]'></img></td>";
-                    echo "<td>$exp[Data]</td>";
-                    echo "<td>$exp[Likes]</td>";
-                    echo "<td>$exp[Dislikes]</td>";
-                    echo "<td>$exp[Descripcio]</td>";
-                    echo "</tr>";
+            ?>
+
+            <ul class="cards clearfix">
+                <li>
+                    <figure class="product-card">
+                    <a href="#">
+                        <?php echo "<img src='$exp[Imatge]'></img>"; ?>
+                        <figcaption>
+                        <h5 class="product-card-title"><?php echo "$exp[Nom]";?></h5>
+                        <p><?php echo "$exp[Descripcio]";?></p>
+                        <p class="product-card-address">
+                            <?php echo "$exp[Data]";?>
+                        </p>
+                        <div class="product-card-price">
+                            <span class="price-savings"><?php echo "$exp[Categoria]";?></span>
+                            <p class="amount-price"><?php echo "$exp[Likes]";?> Likes</p>
+                            <p class="amount-price"><?php echo "$exp[Dislikes]";?> Dislikes</p>
+                        </div>
+                        </figcaption>
+                    </a>
+                    </figure>
+                </li>
+            </ul>
+
+            <?php
                 }
-                ?>
-            </tbody>
-        </table>
+            ?>
+
+        </div>
 
     </div>
 
