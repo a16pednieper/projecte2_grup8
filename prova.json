@@ -31,8 +31,8 @@
         },
 
         "Exp4":{
-            "Nom": "China chin chun",
-            "Categoria": "asiaticos",
+            "Nom": "Viaje Hong Kong",
+            "Categoria": "Turismo",
             "Imatge": "https://picsum.photos/400/400",
             "Data": "15/12/2020",
             "Likes": 19,
@@ -41,8 +41,8 @@
         },
 
         "Exp5":{
-            "Nom": "Morolandia",
-            "Categoria": "moros",
+            "Nom": "Viaje Turquia",
+            "Categoria": "Turismo",
             "Imatge": "https://picsum.photos/400/400",
             "Data": "15/12/2020",
             "Likes": 19,
@@ -51,8 +51,8 @@
         },
 
         "Exp6":{
-            "Nom": "Africa central",
-            "Categoria": "niggas in the hood",
+            "Nom": "Safari Animales",
+            "Categoria": "Safari",
             "Imatge": "https://picsum.photos/400/400",
             "Data": "15/12/2020",
             "Likes": 19,
