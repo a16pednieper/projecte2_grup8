@@ -20,7 +20,7 @@
         public function select() {
             $this->query = "SELECT * FROM USUARI";
             $this->get_results_from_query();
-
+            session_start();
             return $this->rows;
         }
 
