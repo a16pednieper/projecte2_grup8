@@ -21,20 +21,9 @@
 			$$property = $value;
 		}
        
-    $usuari = new Usuari();
-    //$existeix = $usuari -> selectByData($_POST);
+    $usuari = new Usuari();    
     $usuari -> insert($_POST);
-
-    // if ($existeix[0] =="true") {
-		
-	// 	$result = "EL usuari ja existeix";
-	// 	} else {
     
-	// 		$result = $usuari -> insert($_POST);
-    // }
-    
-    
-    //echo json_encode($result);
 }
 
 ?>

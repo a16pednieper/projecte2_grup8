@@ -18,21 +18,6 @@
         $user -> registro($datos);
 
     }
-    //     if ($user->existUsuari($usuari) == false) {
-    //         $resultUser = $user->registro($datos);
 
-    //         if ($resultUser == false) {
-    //             echo "NOPE";
-    //         } else {
-    //             echo "OKAY";
-    //         }
-    //     } else {
-    //         echo "EXISTE";
-    //     }
-
-
-    // } else {
-    //     echo "EMPTY";
-    // }
 
 ?>

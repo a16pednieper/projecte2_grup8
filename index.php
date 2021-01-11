@@ -49,38 +49,6 @@
             <img src="img/avion.gif" alt="avion" width="200" class="avion">
         </div>
 
-            <?php 
-
-            // $servername = "labs.iam.cat";
-            // $username = "a16pednieper_v2";
-            // $password = "pedro";
-
-            // $conn = new mysqli($servername, $username, $password);
-
-            // if ($conn->connect_error) {
-            // die("Connection failed: " . $conn->connect_error);
-            //   }
-            // echo "Connected successfully";
-
-            // $sql = " SELECT * FROM `CATEGORIA` ";
-            // $result = $conn->query($sql);
-
-            // echo $result;
-            
-            // $data = file_get_contents('prova.json');
-            // $viajes = json_decode($data, true);
-
-            // foreach ($viajes as $viaje) {
-            //    echo '<pre>';
-            //   print_r($viaje);
-            //  echo '</pre>';
-
-            // }     
-
-            // $sql = 'INSERT INTO USUARI (username, password) VALUES ( $usuari, $contra)';
-            // $result = $conn->query($sql);
-        
-            ?>
             
             <div class="experiences">
 
