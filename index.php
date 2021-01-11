@@ -46,7 +46,7 @@
     <div class="principal">
         <div class="cabecera">
             <h1>Experiencies</h1>
-            <img src="img/avion.gif" alt="avion" width="200" class="avion">
+            <img src="img/avion.gif" alt="avion" width="150" class="avion">
         </div>
 
             
