@@ -35,11 +35,13 @@
                 console.log(llargada);
 
                 var htmlStr="";
-                for (let index = -2; index < llargada; index++) {
+                for (let index = -1; index < llargada; index++) {
                     const element = datos[index];
                     console.log(index);
 
-                    htmlStr += `<p>Prova</p>`;
+                    htmlStr += `<p> Prova </p>
+                                <h3>${element.titol}</h3>
+                    `;
                     
                 }
 
