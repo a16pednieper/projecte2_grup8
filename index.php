@@ -53,18 +53,25 @@
             <div class="experiences">
 
             <?php
-            $contenido = file_get_contents("prova.json");
-            $con = $contenido;
-            $datos = json_decode($con, true);
-            $hay = count($datos["Experiencies"]);
-            $exps = $datos["Experiencies"];
+            // $contenido =  axios.get(;
+            // $con = $contenido;
+            // $datos = json_decode($con, true);
+            // $hay = count($datos["Experiencies"]);
+            // $exps = $datos["Experiencies"];
             ?>
                 
             <?php
                 foreach($exps as $exp){
             ?>
 
-            <ul class="cards clearfix">
+            <script>
+            let datos = [];
+            function renderDatos() {
+
+            let htmlStr="";
+            for (let index = 0; index < contenido.length; index++) {
+                const element = contenido[index];
+                htmlStr += <ul class="cards clearfix">
                 <li>
                     <figure class="product-card">
                     <a href="#">
@@ -85,10 +92,26 @@
                     </figure>
                 </li>
             </ul>
+            }
+
+            document.getElementById("Experiencies").innerHTML=htmlStr;
+            }
+
+            axios.get('http://labs.iam.cat/~a16pednieper/projecte2_grup8/mostrarExperiencias.php')
+
+            .then (function (response)) {
+                datos=response.data;
+                renderDatos();
+            }
+            
+            </script>
+
 
             <?php
                 }
             ?>
+
+           
 
         </div>
 

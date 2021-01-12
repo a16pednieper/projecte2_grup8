@@ -1,13 +1,16 @@
 {
     "Experiencies":{
         "Exp1":{
-            "Nom": "Viaje playa",
-            "Categoria": "playa",
-            "Imatge": "https://picsum.photos/400/400",
-            "Data": "15/12/2020",
-            "Likes": 2,
-            "Dislikes": 1,
-            "Descripcio": "Text de prova per el primer JSON"
+            "id": 1,
+            "titol": "Viaje playa",
+            "descripcio": "Prova1",
+            "imatge": "https://picsum.photos/400/400",
+            "coordenadas": "-55.0765, -135.8582",
+            "likes": 2,
+            "dislikes": 1,
+            "fecha": "15/12/2020",
+            "id_usuari": 3,
+            "id_categoria": 2            
         },
 
         "Exp2":{
