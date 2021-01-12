@@ -62,9 +62,8 @@
                 
                 axios.get('http://labs.iam.cat/~a16pednieper/projecte2_grup8/mostrarExperiencias.php'
               )         
-            .then (function (datos)  {
-                datos=datos.data;
-                console.log(datos);                
+            .then (function (datos)  {    
+                                
                 renderDatos();
             })
             .catch(function (error) {
