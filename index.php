@@ -73,10 +73,9 @@
 
                 let htmlStr="";
                 for (let index = 0; index < datos.length; index++) {
-                    const element = datos[index];
-                    htmlStr += `for (let index = 0; index < contenido.length; index++) {
-                        const element = contenido[index];
-                        htmlStr += <ul class="cards clearfix">
+                    const element = datos[index];                    
+                        
+                        htmlStr += `<ul class="cards clearfix">
                         <li>
                             <figure class="product-card">
                             <a href="#">
@@ -97,7 +96,7 @@
                             </figure>
                         </li>
                     </ul>
-                    }`;
+                    `};
                 }
 
                 document.getElementById("experiencies").innerHTML=htmlStr;
