@@ -100,7 +100,7 @@
                     }`;
                 }
 
-                document.getElementById("Experiencies").innerHTML=htmlStr;
+                document.getElementById("experiencies").innerHTML=htmlStr;
             }
 
             
