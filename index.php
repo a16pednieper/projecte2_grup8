@@ -35,7 +35,7 @@
                 console.log(llargada);
 
                 let htmlStr="";
-                for (let index = 0; index < llargada; index++) {
+                for (let index = -2; index < llargada; index++) {
                     const element = datos[index];
                     console.log(index);
 
