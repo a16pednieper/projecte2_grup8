@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js%22%3E"> </script>
     <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
 
 
@@ -105,12 +106,13 @@
             
 
             window.onload = function () {
+                console.log("tonto");
                 axios.get('http://labs.iam.cat/~a16pednieper/projecte2_grup8/mostrarExperiencias.php'
               )         
             .then (function (response)  {
                 datos=response.data;
                 console.log(datos);
-                console.log("tonto");
+                
                 renderDatos();
             });
             }
