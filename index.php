@@ -29,7 +29,10 @@
                
                 let datos = [];
                 console.log("HOLA");
-                console.log(datos.data.length);
+
+                var llargada = response.data.results
+
+                console.log(llargada);
 
                 let htmlStr="";
 
