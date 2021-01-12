@@ -51,7 +51,7 @@
         </div>
 
             
-            <div class="experiences">
+            <div class="experiences" id="experiencies">
 
             <?php
             // $contenido =  axios.get(;
