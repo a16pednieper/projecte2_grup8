@@ -18,39 +18,38 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"> </script>
     <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
 
-    <script>
-                      
+    <script>                      
 
             window.onload = function() {
                 
                 axios.get('http://labs.iam.cat/~a16pednieper/projecte2_grup8/mostrarExperiencias.php', {
 
             })         
-            .then( datos =>  {   
+            .then( response =>  {   
                
 
                 var htmlStr = "";
-                var llargada = datos.data.results;
+                var llargada = response.data.results;
                 console.log(llargada.length);
                     for (var index = 0; index < llargada.length; index++) {
-                        const element = datos[index];                    
+                        const element = response[index];                    
                                 
                         htmlStr += `<ul class="cards clearfix">
                         <li>
                         <p>Pedrito</p>
                         <figure class="product-card">
                         <a href="#">
-                            <img src='${datos[index].imatge}'></img>
+                            <img src='${response[index].imatge}'></img>
                             <figcaption>
-                            <h5 class="product-card-title">${datos[index].titol}</h5>
-                                        <p>${datos[index].descripcio}</p>
+                            <h5 class="product-card-title">${response[index].titol}</h5>
+                                        <p>${response[index].descripcio}</p>
                                         <p class="product-card-address">
-                                        ${datos[index].fecha}
+                                        ${response[index].fecha}
                                         </p>
                                         <div class="product-card-price">
-                                            <span class="price-savings">${datos[index].id_categoria}</span>
-                                            <p class="amount-price">${datos[index].likes} Likes</p>
-                                            <p class="amount-price">${datos[index].dislikes} Dislikes</p>
+                                            <span class="price-savings">${response[index].id_categoria}</span>
+                                            <p class="amount-price">${response[index].likes} Likes</p>
+                                            <p class="amount-price">${response[index].dislikes} Dislikes</p>
                                         </div>
                                         </figcaption>
                                     </a>
