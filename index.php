@@ -27,7 +27,11 @@
             })         
             .then( response =>  {   
                
+                let datos = [];
                 console.log("HOLA");
+                console.log(datos.length);
+
+                let htmlStr="";
 
                 // var htmlStr = "";
                 // var llargada = response.data.results;
