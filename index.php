@@ -27,39 +27,40 @@
             })         
             .then( response =>  {   
                
+                console.log("HOLA");
 
-                var htmlStr = "";
-                var llargada = response.data.results;
-                console.log(llargada.length);
-                    for (var index = 0; index < llargada.length; index++) {
-                        const element = response[index];                    
+                // var htmlStr = "";
+                // var llargada = response.data.results;
+                // console.log(llargada.length);
+                //     for (var index = 0; index < llargada.length; index++) {
+                //         const element = response[index];                    
                                 
-                        htmlStr += `<ul class="cards clearfix">
-                        <li>
-                        <p>Pedrito</p>
-                        <figure class="product-card">
-                        <a href="#">
-                            <img src='${response[index].imatge}'></img>
-                            <figcaption>
-                            <h5 class="product-card-title">${response[index].titol}</h5>
-                                        <p>${response[index].descripcio}</p>
-                                        <p class="product-card-address">
-                                        ${response[index].fecha}
-                                        </p>
-                                        <div class="product-card-price">
-                                            <span class="price-savings">${response[index].id_categoria}</span>
-                                            <p class="amount-price">${response[index].likes} Likes</p>
-                                            <p class="amount-price">${response[index].dislikes} Dislikes</p>
-                                        </div>
-                                        </figcaption>
-                                    </a>
-                                    </figure>
-                                </li>
-                            </ul>
-                            `};
+                //         htmlStr += `<ul class="cards clearfix">
+                //         <li>
+                //         <p>Pedrito</p>
+                //         <figure class="product-card">
+                //         <a href="#">
+                //             <img src='${response[index].imatge}'></img>
+                //             <figcaption>
+                //             <h5 class="product-card-title">${response[index].titol}</h5>
+                //                         <p>${response[index].descripcio}</p>
+                //                         <p class="product-card-address">
+                //                         ${response[index].fecha}
+                //                         </p>
+                //                         <div class="product-card-price">
+                //                             <span class="price-savings">${response[index].id_categoria}</span>
+                //                             <p class="amount-price">${response[index].likes} Likes</p>
+                //                             <p class="amount-price">${response[index].dislikes} Dislikes</p>
+                //                         </div>
+                //                         </figcaption>
+                //                     </a>
+                //                     </figure>
+                //                 </li>
+                //             </ul>
+                //             `};
 
 
-                document.getElementById("experiencies").innerHTML=htmlStr;
+                // document.getElementById("experiencies").innerHTML=htmlStr;
             
                 
             })
