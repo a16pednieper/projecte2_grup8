@@ -27,7 +27,9 @@
             })         
             .then( response =>  {   
                
+                
                 let datos = [];
+                datos=response.data
                 console.log("HOLA");
 
                 var llargada = response.data.length;
@@ -39,14 +41,14 @@
                     const element = datos[index];
                     console.log(index);
 
-                    htmlStr += '<p>' + response[index].titol  + '</p>';
+                    htmlStr += `<p> Desc ${datos[index].descripcio}  </p>`;
                     
                 }
 
                 document.getElementById("experiencies").innerHTML=htmlStr;
 
                 // var htmlStr = "";                
-                // <p> Desc ${datos[index].descripcio}  </p>
+                // 
                 //     <p> Imatge ${datos[index].imatge}  </p>
                 //     <p> Coordenadas ${datos[index].coordenadas}  </p>
                 //     <p> Likes ${datos[index].likes}  </p>
@@ -85,7 +87,7 @@
                 
             })
             .catch(function () {
-                console.log("El Tinder");
+                console.log("Ha salido del principal");
             })
             .then (function () {
                 //always executed
