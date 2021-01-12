@@ -97,7 +97,7 @@
                         </li>
                     </ul>
                     `};
-                }
+                
 
                 document.getElementById("experiencies").innerHTML=htmlStr;
             }
