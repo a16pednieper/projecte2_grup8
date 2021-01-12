@@ -110,6 +110,7 @@
             .then (function (response)  {
                 datos=response.data;
                 console.log(datos);
+                console.log("tonto");
                 renderDatos();
             });
             }
