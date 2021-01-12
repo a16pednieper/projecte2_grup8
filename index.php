@@ -19,7 +19,7 @@
     <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
 
     <script>
-            let datos = [];
+            
             function renderDatos() {
 
                 let htmlStr="";
