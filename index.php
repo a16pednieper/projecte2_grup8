@@ -23,14 +23,16 @@
 
             window.onload = function() {
                 
-                axios.get('http://labs.iam.cat/~a16pednieper/projecte2_grup8/mostrarExperiencias.php')         
-            .then (function (datos)  {   
+                axios.get('http://labs.iam.cat/~a16pednieper/projecte2_grup8/mostrarExperiencias.php', {
+
+            })         
+            .then(function(datos)  {   
                
 
-                let htmlStr="";
-                let llargada = datos.data.results;
+                var htmlStr = "";
+                var llargada = datos.data.results;
                 console.log(llargada.length);
-                    for (let index = 0; index < llargada.length; index++) {
+                    for (var index = 0; index < llargada.length; index++) {
                         const element = datos[index];                    
                                 
                         htmlStr += `<ul class="cards clearfix">
