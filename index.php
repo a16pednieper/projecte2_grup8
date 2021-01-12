@@ -72,11 +72,14 @@
             function renderDatos() {
 
                 let htmlStr="";
-                for (let index = 0; index < datos.length; index++) {
+                var llargada = datos;
+                console.log(llargada.length);
+                for (let index = 0; index < llargada.length; index++) {
                     const element = datos[index];                    
                         
                         htmlStr += `<ul class="cards clearfix">
                         <li>
+                            <p>Pedrito</p>
                             <figure class="product-card">
                             <a href="#">
                                 <img src='${datos[index].imatge}'></img>
