@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 require_once("experiencia.php");
