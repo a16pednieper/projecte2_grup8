@@ -64,8 +64,8 @@
             
                 
             })
-            .catch(function (error) {
-                console.log(error);
+            .catch(function () {
+                console.log("El Tinder");
             })
             .then (function () {
                 //always executed
