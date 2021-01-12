@@ -39,7 +39,7 @@
                     const element = datos[index];
                     console.log(index);
 
-                    htmlStr += '<p>' + datos[index].titol  + '</p>';
+                    htmlStr += '<p>' + response[index].titol  + '</p>';
                     
                 }
 
