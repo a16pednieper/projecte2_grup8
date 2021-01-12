@@ -19,52 +19,49 @@
     <link rel="icon" type="image/vnd.microsoft.icon" href="img/favicon.ico">
 
     <script>
-            
-            function renderDatos() {
-
-                let htmlStr="";
-                var llargada = datos.data.results;
-                console.log(llargada.length);
-                for (let index = 0; index < llargada.length; index++) {
-                    const element = datos[index];                    
-                        
-                        htmlStr += `<ul class="cards clearfix">
-                        <li>
-                            <p>Pedrito</p>
-                            <figure class="product-card">
-                            <a href="#">
-                                <img src='${datos[index].imatge}'></img>
-                                <figcaption>
-                                <h5 class="product-card-title">${datos[index].titol}</h5>
-                                <p>${datos[index].descripcio}</p>
-                                <p class="product-card-address">
-                                ${datos[index].fecha}
-                                </p>
-                                <div class="product-card-price">
-                                    <span class="price-savings">${datos[index].id_categoria}</span>
-                                    <p class="amount-price">${datos[index].likes} Likes</p>
-                                    <p class="amount-price">${datos[index].dislikes} Dislikes</p>
-                                </div>
-                                </figcaption>
-                            </a>
-                            </figure>
-                        </li>
-                    </ul>
-                    `};
-                
-
-                document.getElementById("experiencies").innerHTML=htmlStr;
-            }
-
-            
+                      
 
             window.onload = function () {
                 
                 axios.get('http://labs.iam.cat/~a16pednieper/projecte2_grup8/mostrarExperiencias.php'
               )         
             .then (function (datos)  {    
+               
+
+                                        let htmlStr="";
+                        var llargada = datos.data.results;
+                        console.log(llargada.length);
+                        for (let index = 0; index < llargada.length; index++) {
+                            const element = datos[index];                    
                                 
-                renderDatos();
+                                htmlStr += `<ul class="cards clearfix">
+                                <li>
+                                    <p>Pedrito</p>
+                                    <figure class="product-card">
+                                    <a href="#">
+                                        <img src='${datos[index].imatge}'></img>
+                                        <figcaption>
+                                        <h5 class="product-card-title">${datos[index].titol}</h5>
+                                        <p>${datos[index].descripcio}</p>
+                                        <p class="product-card-address">
+                                        ${datos[index].fecha}
+                                        </p>
+                                        <div class="product-card-price">
+                                            <span class="price-savings">${datos[index].id_categoria}</span>
+                                            <p class="amount-price">${datos[index].likes} Likes</p>
+                                            <p class="amount-price">${datos[index].dislikes} Dislikes</p>
+                                        </div>
+                                        </figcaption>
+                                    </a>
+                                    </figure>
+                                </li>
+                            </ul>
+                            `};
+
+
+                document.getElementById("experiencies").innerHTML=htmlStr;
+            
+                
             })
             .catch(function (error) {
                 console.log(error);
