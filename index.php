@@ -37,21 +37,22 @@
                 let htmlStr="";
                 for (let index = 0; index < llargada; index++) {
                     const element = datos[index];
+                    console.log(index);
 
                     htmlStr += `<p> Titol ${datos[index].titol}  </p>
-                    <p> Desc ${datos[index].descripcio}  </p>
-                    <p> Imatge ${datos[index].imatge}  </p>
-                    <p> Coordenadas ${datos[index].coordenadas}  </p>
-                    <p> Likes ${datos[index].likes}  </p>
-                    <p> DisLikes ${datos[index].dislikes}  </p>
-                    <p> Data ${datos[index].fecha}  </p>`;
+                    `;
                     
                 }
 
                 document.getElementById("experiencies").innerHTML=htmlStr;
 
                 // var htmlStr = "";                
-                
+                // <p> Desc ${datos[index].descripcio}  </p>
+                //     <p> Imatge ${datos[index].imatge}  </p>
+                //     <p> Coordenadas ${datos[index].coordenadas}  </p>
+                //     <p> Likes ${datos[index].likes}  </p>
+                //     <p> DisLikes ${datos[index].dislikes}  </p>
+                //     <p> Data ${datos[index].fecha}  </p>
                 //     for (var index = 0; index < llargada; index++) {
                 //         const element = response[index];                    
                                 
