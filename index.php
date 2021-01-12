@@ -34,39 +34,53 @@
 
                 console.log(llargada);
 
-                
+                let htmlStr="";
+                for (let index = 0; index < llargada; index++) {
+                    const element = datos[index];
 
-                var htmlStr = "";                
-                
-                    for (var index = 0; index < llargada; index++) {
-                        const element = response[index];                    
-                                
-                        htmlStr += `<ul class="cards clearfix">
-                        <li>
-                        <p>Pedrito</p>
-                        <figure class="product-card">
-                        <a href="#">
-                            <img src='${response[index].imatge}'></img>
-                            <figcaption>
-                            <h5 class="product-card-title">${response[index].titol}</h5>
-                                        <p>${response[index].descripcio}</p>
-                                        <p class="product-card-address">
-                                        ${response[index].fecha}
-                                        </p>
-                                        <div class="product-card-price">
-                                            <span class="price-savings">${response[index].id_categoria}</span>
-                                            <p class="amount-price">${response[index].likes} Likes</p>
-                                            <p class="amount-price">${response[index].dislikes} Dislikes</p>
-                                        </div>
-                                        </figcaption>
-                                    </a>
-                                    </figure>
-                                </li>
-                            </ul>
-                            `};
-
+                    htmlStr += `<p> Titol ${datos[index].titol}  </p>
+                    <p> Desc ${datos[index].descripcio}  </p>
+                    <p> Imatge ${datos[index].imatge}  </p>
+                    <p> Coordenadas ${datos[index].coordenadas}  </p>
+                    <p> Likes ${datos[index].likes}  </p>
+                    <p> DisLikes ${datos[index].dislikes}  </p>
+                    <p> Data ${datos[index].fecha}  </p>`;
+                    
+                }
 
                 document.getElementById("experiencies").innerHTML=htmlStr;
+
+                // var htmlStr = "";                
+                
+                //     for (var index = 0; index < llargada; index++) {
+                //         const element = response[index];                    
+                                
+                //         htmlStr += `<ul class="cards clearfix">
+                //         <li>
+                //         <p>Pedrito</p>
+                //         <figure class="product-card">
+                //         <a href="#">
+                //             <img src='${response[index].imatge}'></img>
+                //             <figcaption>
+                //             <h5 class="product-card-title">${response[index].titol}</h5>
+                //                         <p>${response[index].descripcio}</p>
+                //                         <p class="product-card-address">
+                //                         ${response[index].fecha}
+                //                         </p>
+                //                         <div class="product-card-price">
+                //                             <span class="price-savings">${response[index].id_categoria}</span>
+                //                             <p class="amount-price">${response[index].likes} Likes</p>
+                //                             <p class="amount-price">${response[index].dislikes} Dislikes</p>
+                //                         </div>
+                //                         </figcaption>
+                //                     </a>
+                //                     </figure>
+                //                 </li>
+                //             </ul>
+                //             `};
+
+
+                // document.getElementById("experiencies").innerHTML=htmlStr;
             
                 
             })
