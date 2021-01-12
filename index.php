@@ -20,6 +20,8 @@
 
     <script>                      
 
+            var datos = [];
+
             window.onload = function() {
                 
                 axios.get('http://labs.iam.cat/~a16pednieper/projecte2_grup8/mostrarExperiencias.php', {
@@ -28,8 +30,9 @@
             .then( response =>  {   
                
                 
-                let datos = [];
+                
                 datos=response.data
+                console.log(datos);
                 console.log("HOLA");
 
                 var llargada = response.data.length;
