@@ -30,7 +30,7 @@
                 let datos = [];
                 console.log("HOLA");
 
-                var llargada = response.data;
+                var llargada = response.data.length;
 
                 console.log(llargada);
 
