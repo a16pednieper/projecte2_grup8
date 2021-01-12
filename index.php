@@ -34,13 +34,12 @@
 
                 console.log(llargada);
 
-                let htmlStr="";
+                var htmlStr="";
                 for (let index = -2; index < llargada; index++) {
                     const element = datos[index];
                     console.log(index);
 
-                    htmlStr += `<p> Titol ${datos[index].titol}  </p>
-                    `;
+                    
                     
                 }
 
