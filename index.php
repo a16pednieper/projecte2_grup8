@@ -25,7 +25,7 @@
                 let htmlStr="";
                 var llargada = datos;
                 console.log(datos.length);
-                for (let index = 0; index < datos.length; index++) {
+                for (let index = 0; index < 1; index++) {
                     const element = datos[index];                    
                         
                         htmlStr += `<ul class="cards clearfix">
@@ -66,6 +66,12 @@
                 datos=datos.data;
                 console.log(datos);                
                 renderDatos();
+            })
+            .catch(function (error) {
+                console.log(error);
+            })
+            .then (function () {
+                //always executed
             });
             }
             
