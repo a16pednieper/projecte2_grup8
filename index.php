@@ -65,6 +65,7 @@
             ?>
 
             <script>
+
             let datos = [];
 
             function renderDatos() {
@@ -101,11 +102,16 @@
                 document.getElementById("Experiencies").innerHTML=htmlStr;
             }
 
-            axios.get('http://labs.iam.cat/~a16pednieper/projecte2_grup8/mostrarExperiencias.php')
+            
 
-            .then (function (response)) {
+            window.onload = function () {
+                axios.get('http://labs.iam.cat/~a16pednieper/projecte2_grup8/mostrarExperiencias.php'
+              )         
+            .then (function (response)  {
                 datos=response.data;
+                console.log(datos);
                 renderDatos();
+            });
             }
             
             </script>

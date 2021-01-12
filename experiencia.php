@@ -13,9 +13,7 @@
     private $dislikes;
     private $fecha;
     private $id_usuari;
-    private $id_categoria;
-
-  
+    private $id_categoria;  
 
   function __construct () {
     $this->db_name = "a16pednieper_v2";
