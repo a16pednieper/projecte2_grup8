@@ -19,11 +19,11 @@
             //Conexion BBDD
             private $conn;      
             
-            abstract protected function select();
+            //abstract protected function select();
             //abstract protected function insert();
             //abstract protected function update();
             //abstract protected function delete();
-            //abstract protected function registro();
+            abstract protected function registro();
 
             //Metodo privado para abrir conexion
             private function open_connection() {
