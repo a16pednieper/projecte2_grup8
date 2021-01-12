@@ -39,9 +39,7 @@
                     const element = datos[index];
                     console.log(index);
 
-                    htmlStr += `<p> Prova </p>
-                                <h3>${element.titol}</h3>
-                    `;
+                    htmlStr += '<p>' + datos[index].titol  + '</p>';
                     
                 }
 
