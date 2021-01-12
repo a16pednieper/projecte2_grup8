@@ -26,7 +26,7 @@
                 axios.get('http://labs.iam.cat/~a16pednieper/projecte2_grup8/mostrarExperiencias.php', {
 
             })         
-            .then(function(datos)  {   
+            .then( datos =>  {   
                
 
                 var htmlStr = "";
