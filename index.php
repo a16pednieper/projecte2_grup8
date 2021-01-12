@@ -73,8 +73,8 @@
 
                 let htmlStr="";
                 var llargada = datos;
-                console.log(llargada.length);
-                for (let index = 0; index < llargada.length; index++) {
+                console.log(datos.length);
+                for (let index = 0; index < 7; index++) {
                     const element = datos[index];                    
                         
                         htmlStr += `<ul class="cards clearfix">
