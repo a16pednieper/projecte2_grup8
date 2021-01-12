@@ -61,40 +61,44 @@
             ?>
                 
             <?php
-                foreach($exps as $exp){
+            //    foreach($exps as $exp){
             ?>
 
             <script>
             let datos = [];
+
             function renderDatos() {
 
-            let htmlStr="";
-            for (let index = 0; index < contenido.length; index++) {
-                const element = contenido[index];
-                htmlStr += <ul class="cards clearfix">
-                <li>
-                    <figure class="product-card">
-                    <a href="#">
-                        <?php echo "<img src='$exp[Imatge]'></img>"; ?>
-                        <figcaption>
-                        <h5 class="product-card-title"><?php echo "$exp[Nom]";?></h5>
-                        <p><?php echo "$exp[Descripcio]";?></p>
-                        <p class="product-card-address">
-                            <?php echo "$exp[Data]";?>
-                        </p>
-                        <div class="product-card-price">
-                            <span class="price-savings"><?php echo "$exp[Categoria]";?></span>
-                            <p class="amount-price"><?php echo "$exp[Likes]";?> Likes</p>
-                            <p class="amount-price"><?php echo "$exp[Dislikes]";?> Dislikes</p>
-                        </div>
-                        </figcaption>
-                    </a>
-                    </figure>
-                </li>
-            </ul>
-            }
+                let htmlStr="";
+                for (let index = 0; index < datos.length; index++) {
+                    const element = datos[index];
+                    htmlStr += `for (let index = 0; index < contenido.length; index++) {
+                        const element = contenido[index];
+                        htmlStr += <ul class="cards clearfix">
+                        <li>
+                            <figure class="product-card">
+                            <a href="#">
+                                <img src='${datos[index].imatge}'></img>
+                                <figcaption>
+                                <h5 class="product-card-title">${datos[index].titol}</h5>
+                                <p>${datos[index].descripcio}</p>
+                                <p class="product-card-address">
+                                ${datos[index].fecha}
+                                </p>
+                                <div class="product-card-price">
+                                    <span class="price-savings">${datos[index].id_categoria}</span>
+                                    <p class="amount-price">${datos[index].likes} Likes</p>
+                                    <p class="amount-price">${datos[index].dislikes} Dislikes</p>
+                                </div>
+                                </figcaption>
+                            </a>
+                            </figure>
+                        </li>
+                    </ul>
+                    }`;
+                }
 
-            document.getElementById("Experiencies").innerHTML=htmlStr;
+                document.getElementById("Experiencies").innerHTML=htmlStr;
             }
 
             axios.get('http://labs.iam.cat/~a16pednieper/projecte2_grup8/mostrarExperiencias.php')
@@ -106,12 +110,9 @@
             
             </script>
 
-
             <?php
-                }
-            ?>
-
-           
+             //   }
+            ?>           
 
         </div>
 
