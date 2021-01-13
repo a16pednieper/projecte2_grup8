@@ -58,7 +58,10 @@
             window.onload = function() {
                 //OJO HAY QUE CXAMBIAR LA URL AHORA ES UN JSON FAKE
                 console.log("hago la llamada a axios")
-                axios.get('http://localhost/projecte2_grup8/prova.json')         
+                // AXIOS para entrar en Localhost
+                // axios.get('http://localhost/projecte2_grup8/prova.json')     
+                // AXIOS para entrar en LABS
+                axios.get('http://labs.iam.cat/~a16pednieper/projecte2_grup8/mostrarExperiencias.php')     
             .then( response =>  {   
                
                 
