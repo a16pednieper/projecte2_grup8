@@ -23,10 +23,9 @@
             var datos = [];
 
             window.onload = function() {
-                
-                axios.get('http://labs.iam.cat/~a16pednieper/projecte2_grup8/mostrarExperiencias.php', {
-
-            })         
+                //OJO HAY QUE CXAMBIAR LA URL AHORA ES UN JSON FAKE
+                console.log("hago la llamada a axios")
+                axios.get('http://localhost/projecte2_grup8/prova.json')         
             .then( response =>  {   
                
                 
@@ -35,17 +34,37 @@
                 console.log(datos);
                 console.log("HOLA");
 
-                var llargada = response.data.length;
+                var llargada = datos.length;
 
                 console.log(llargada);
 
                 var htmlStr="";
-                for (let index = -1; index < llargada; index++) {
+                for (let index = 0; index < llargada; index++) {
                     const element = datos[index];
                     console.log(index);
 
-                    htmlStr += `<p> Desc ${datos[index].descripcio}  </p>`;
-                    
+                  //  htmlStr += `<h3> Desc ${datos[index].Descripcio}  </h3>`;
+                  htmlStr += `<ul class="cards clearfix">
+                        <li>
+                        <figure class="product-card">
+                        <a href="#">
+                           <img src='${datos[index].imatge}'></img>
+                             <figcaption>
+                            <h5 class="product-card-title">${datos[index].titol}</h5>
+                                         <p>${datos[index].descripcio}</p>
+                                         <p class="product-card-address">
+                                         ${datos[index].fecha}
+                                         </p>
+                                         <div class="product-card-price">
+                                             <span class="price-savings">${datos[index].id_categoria}</span>
+                                             <p class="amount-price">${datos[index].likes} Likes</p>
+                                             <p class="amount-price">${datos[index].dislikes} Dislikes</p>
+                                         </div>
+                                         </figcaption>
+                                     </a>
+                                     </figure>
+                                 </li>
+                             </ul>`;
                 }
 
                 document.getElementById("experiencies").innerHTML=htmlStr;
@@ -60,29 +79,7 @@
                 //     for (var index = 0; index < llargada; index++) {
                 //         const element = response[index];                    
                                 
-                //         htmlStr += `<ul class="cards clearfix">
-                //         <li>
-                //         <p>Pedrito</p>
-                //         <figure class="product-card">
-                //         <a href="#">
-                //             <img src='${response[index].imatge}'></img>
-                //             <figcaption>
-                //             <h5 class="product-card-title">${response[index].titol}</h5>
-                //                         <p>${response[index].descripcio}</p>
-                //                         <p class="product-card-address">
-                //                         ${response[index].fecha}
-                //                         </p>
-                //                         <div class="product-card-price">
-                //                             <span class="price-savings">${response[index].id_categoria}</span>
-                //                             <p class="amount-price">${response[index].likes} Likes</p>
-                //                             <p class="amount-price">${response[index].dislikes} Dislikes</p>
-                //                         </div>
-                //                         </figcaption>
-                //                     </a>
-                //                     </figure>
-                //                 </li>
-                //             </ul>
-                //             `};
+               
 
 
                 // document.getElementById("experiencies").innerHTML=htmlStr;

@@ -1,66 +1,15 @@
-{
-    "Experiencies":{
-        "Exp1":{
-            "id": 1,
-            "titol": "Viaje playa",
-            "descripcio": "Prova1",
-            "imatge": "https://picsum.photos/400/400",
-            "coordenadas": "-55.0765, -135.8582",
-            "likes": 2,
-            "dislikes": 1,
-            "fecha": "15/12/2020",
-            "id_usuari": 3,
-            "id_categoria": 2            
-        },
-
-        "Exp2":{
-            "Nom": "Viaje montaña",
-            "Categoria": "montaña",
-            "Imatge": "https://picsum.photos/400/400",
-            "Data": "15/12/2020",
-            "Likes": 5,
-            "Dislikes": 2,
-            "Descripcio": "Text de prova per el primer JSON, segona experiencia"
-        },
-
-        "Exp3":{
-            "Nom": "Viaje TorreMolinos",
-            "Categoria": "historico",
-            "Imatge": "https://picsum.photos/400/400",
-            "Data": "15/12/2020",
-            "Likes": 10,
-            "Dislikes": 60,
-            "Descripcio": "Text de prova per el primer JSON, tercera experiencia"
-        },
-
-        "Exp4":{
-            "Nom": "Viaje Hong Kong",
-            "Categoria": "Turismo",
-            "Imatge": "https://picsum.photos/400/400",
-            "Data": "15/12/2020",
-            "Likes": 19,
-            "Dislikes": 20,
-            "Descripcio": "Text de prova per el primer JSON, tercera experiencia"
-        },
-
-        "Exp5":{
-            "Nom": "Viaje Turquia",
-            "Categoria": "Turismo",
-            "Imatge": "https://picsum.photos/400/400",
-            "Data": "15/12/2020",
-            "Likes": 19,
-            "Dislikes": 20,
-            "Descripcio": "Text de prova per el primer JSON, tercera experiencia"
-        },
-
-        "Exp6":{
-            "Nom": "Safari Animales",
-            "Categoria": "Safari",
-            "Imatge": "https://picsum.photos/400/400",
-            "Data": "15/12/2020",
-            "Likes": 19,
-            "Dislikes": 20,
-            "Descripcio": "Text de prova per el primer JSON, tercera experiencia"
-        } 
-    }
-}
+[
+    {
+        "id": 1,
+        "titol": "Viaje playa",
+        "descripcio": "Prova1",
+        "imatge": "https://picsum.photos/400/400",
+        "coordenadas": "-55.0765, -135.8582",
+        "likes": 2,
+        "dislikes": 1,
+        "fecha": "15/12/2020",
+        "id_usuari": 3,
+        "id_categoria": 2            
+    }   
+          
+]
