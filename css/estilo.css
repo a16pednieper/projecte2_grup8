@@ -59,8 +59,8 @@ td, th {
 
 .experiences{
     border-style: solid;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .cards {

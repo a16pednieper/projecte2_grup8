@@ -10,6 +10,71 @@
         "fecha": "15/12/2020",
         "id_usuari": 3,
         "id_categoria": 2            
-    }   
+    },
+
+    {
+        "id": 2,
+        "titol": "Viaje playa",
+        "descripcio": "Prova2",
+        "imatge": "https://picsum.photos/400/400",
+        "coordenadas": "-55.0765, -135.8582",
+        "likes": 12,
+        "dislikes": 1,
+        "fecha": "15/12/2020",
+        "id_usuari": 3,
+        "id_categoria": 2            
+    },
+
+    {
+        "id": 3,
+        "titol": "Viaje playa",
+        "descripcio": "Prova3",
+        "imatge": "https://picsum.photos/400/400",
+        "coordenadas": "-55.0765, -135.8582",
+        "likes": 2,
+        "dislikes": 11,
+        "fecha": "15/12/2020",
+        "id_usuari": 3,
+        "id_categoria": 2            
+    },
+
+    {
+        "id": 4,
+        "titol": "Viaje playa",
+        "descripcio": "Prova4",
+        "imatge": "https://picsum.photos/400/400",
+        "coordenadas": "-55.0765, -135.8582",
+        "likes": 12,
+        "dislikes": 11,
+        "fecha": "15/12/2020",
+        "id_usuari": 3,
+        "id_categoria": 2            
+    },
+
+    {
+        "id": 5,
+        "titol": "Viaje playa",
+        "descripcio": "Prova5",
+        "imatge": "https://picsum.photos/400/400",
+        "coordenadas": "-55.0765, -135.8582",
+        "likes": 20,
+        "dislikes": 1,
+        "fecha": "15/12/2020",
+        "id_usuari": 3,
+        "id_categoria": 2            
+    },
+
+    {
+        "id": 6,
+        "titol": "Viaje playa",
+        "descripcio": "Prova6",
+        "imatge": "https://picsum.photos/400/400",
+        "coordenadas": "-55.0765, -135.8582",
+        "likes": 2,
+        "dislikes": 10,
+        "fecha": "15/12/2020",
+        "id_usuari": 3,
+        "id_categoria": 2            
+    }
           
 ]
