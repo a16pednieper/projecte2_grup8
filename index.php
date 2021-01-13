@@ -50,7 +50,7 @@
         </div>
             
         <div class="experiences" id="experiencies">     
-
+        <br>
         <script>                      
 
             var datos = [];
