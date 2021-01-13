@@ -2,7 +2,7 @@
 
     require_once('Viatges.php');
 
-    class Usuari extends Viatges {  
+    class Usuari {  
         
         private $id;
         private $nom;
@@ -24,21 +24,59 @@
             return $this->rows;
         }
 
-        public function selectByData($usuariData = array()) {
+        public function selectByData($nom) {
+            //FUNCIONES PARA ABRIR LA BD DE OTRA FORMA INICIO
+            function openBD(){
+                $servername = "labs.iam.cat";
+                $username = "a16pednieper_v2";
+                $password = "pedro";
+                    $conn = new PDO("mysql:host=$servername;dbname=a16pednieper_v2;charset=utf8", $username, $password);
+                    // set the PDO error mode to exception
+                    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            
+                    return $conn;
+            }
+            function closeBD(){
+                return null;
+            }
+            //FUNCIONES PARA ABRIR LA BD DE OTRA FORMA FINAL
 
+
+            //$usuariData = array()
             $result = "false";
-            $nom = "";
+          //  $nom = "";
 
-                foreach($usuariData as $property => $value) {
+               /* foreach($usuariData as $property => $value) {
                     $$property = $value;
-                };
+                };*/
+
+
 
             if ($nom != "") {
+                $conn=openBD();
 
-                $this->query = "SELECT * FROM USUARI WHERE nom='$nom'";
+                $sentence= $conn -> prepare("SELECT * FROM USUARI WHERE nom='$nom'");
+                $sentence -> execute();
 
-                if (count($this->rows) == 1) {
-                    $result= "true";
+                $result= $sentence->fetchAll();
+                //$this->query = "SELECT * FROM USUARI WHERE nom='$nom'";
+                //$this->get_results_from_query();
+                session_start();
+
+                if ($this!= null) {
+                    //$result= "true";
+                    /*
+                    function console_log( $data ){
+                        echo '<script>';
+                        echo 'console.log('. json_encode( $data ) .')';
+                        echo '</script>';
+                      }
+                      
+                      console_log( $result );
+                      */
+                    header("Location: login.html");
+
+                    $conn=closeBD();
                 };
 
             } else {
@@ -68,6 +106,7 @@
         public function update ($usuariData = array()) {
 
         }
+        
 
     }
 

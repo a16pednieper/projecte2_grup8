@@ -25,11 +25,6 @@ class Usuari extends viatges {
         $this->execute_single_query();
     }
 
-    public function select(){
-
-        
-    }
-
 }
 
 ?>

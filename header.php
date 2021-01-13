@@ -8,7 +8,7 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
-                        <button id="login" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#miModal">Login</button>
+                        <button id="login" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#miModalo">Login</button>
                         <button id="registro" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#miModal">Registrar</button>
                     </ul>
                 </div>
