@@ -2,7 +2,7 @@
 
   require_once("viatges.php");
 
-  class Experiencia extends Viatges {
+  class Experiencia extends viatges {
 
     private $id;
     private $titol;
@@ -26,6 +26,9 @@
     return $this->rows;
   }
 
+  public function registro(){
+    
+  }
   
 
   }
