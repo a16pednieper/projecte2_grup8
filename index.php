@@ -68,7 +68,7 @@
             document.getElementById("consulta").addEventListener("click", function(){
                 let valor=document.getElementById("categoria").value;
                 console.log(valor)
-                // console.log("hago la llamada a axios")
+                 console.log("hago la llamada a axios")
                 // AXIOS para entrar en Localhost
                 // axios.get('http://localhost/projecte2_grup8/mostrarExperiencias.php', {
                 //     params: {
@@ -79,14 +79,15 @@
                 axios.get('http://labs.iam.cat/~a16pednieper/projecte2_grup8/mostrarExperiencias.php',{
                     params: {
                         cat: valor
-                })     
+                    }
+                })    
             .then( response =>  {   
                
                 
                 
                 datos=response.data
                 console.log(datos);
-                
+                console.log("Hola");
 
                 var llargada = datos.length;
 

@@ -20,17 +20,16 @@
   }  								
 
   function __toString(){
-    return "(" . $this->id . ", " . $this->titol . ", " . $this->imatge . ", " . $this->likes . ", " . $this->coordenadas . "," . $this->dislikes . ", " . $this->fecha . ", " . $this->id_usuari . ", " . $this->id_categoria . ")";
+    return "(" . $this->id . ", " . $this->titol . ", " . $this->descripcio . ", " . $this->imatge . ", " . $this->likes . ", " . $this->coordenadas . "," . $this->dislikes . ", " . $this->fecha . ", " . $this->id_usuari . ", " . $this->id_categoria . ")";
 }
 
   function filtrar($cat){
     if ($cat == 0){
       $this->query = "SELECT * FROM EXPERIENCIA";
     }
-  
     else {
       $this->query = "SELECT * FROM EXPERIENCIA WHERE id_categoria='$cat'";
-      
+ 
     }
 
     $this-> get_results_from_query();
