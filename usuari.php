@@ -1,6 +1,6 @@
 <?php
 
-    require_once('Viatges.php');
+    require_once('viatges.php');
 
     class Usuari {  
         
