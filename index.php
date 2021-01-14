@@ -51,8 +51,8 @@
 
         <select name="idcategoria" id="categoria">
             <option value="0">Todas</option>
-            <option value="1">Muntanya</option>
-            <option value="2">Aventures</option>
+            <option value="1">Aventures</option>
+            <option value="2">Muntana</option>
             <option value="3">Familiar</option>
         </select>
     
