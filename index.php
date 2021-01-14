@@ -41,48 +41,47 @@
             </div>
         </div>
     </div>
-    <div class="modal fade" id="miModalo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="modal-title" id="myModalLabel">Logear Usuario</h4>
-                </div>
-                <div class="modal-body">
-                    <?php
-                         include 'logearUsuari.php';
-                    ?>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
     <div class="principal">
         <div class="cabecera">
             <h1>Experiencies</h1>
             <img src="img/avion.gif" alt="avion" width="150" class="avion">
         </div>
-            
-        <div class="experiences" id="experiencies">
-        <br>     
 
+        <select name="idcategoria" id="categoria">
+            <option value="0">Todas</option>
+            <option value="1">Muntanya</option>
+            <option value="2">Aventures</option>
+            <option value="3">Familiar</option>
+        </select>
+    
+        <input type="button" id="consulta" value="Consulta">
+        <br> 
+
+        <div class="experiences" id="experiencies">
+            
         <script>                      
 
             var datos = [];
 
-            window.onload = function() {
-                //OJO HAY QUE CXAMBIAR LA URL AHORA ES UN JSON FAKE
+            document.getElementById("consulta").addEventListener("click", function(){
+                let valor=0;
+                console.log(valor)
                 console.log("hago la llamada a axios")
                 // AXIOS para entrar en Localhost
-                //  axios.get('http://localhost/projecte2_grup8/mostrarExperiencias.php')     
+                axios.get('http://localhost/projecte2_grup8/mostrarExperiencias.php', {
+                    params: {
+                        cat: valor
+                    }
+                })     
                 // AXIOS para entrar en LABS
-               // axios.get('http://labs.iam.cat/~a16pednieper/projecte2_grup8/mostrarExperiencias.php')     
+                // axios.get('http://labs.iam.cat/~a16pednieper/projecte2_grup8/mostrarExperiencias.php',{
+                //     params: {
+                //         cat: valor
+                // })     
             .then( response =>  {   
-            
-
-
+               
                 
                 
                 datos=response.data
@@ -140,14 +139,15 @@
                 // document.getElementById("experiencies").innerHTML=htmlStr;
             
                 
-            })
-            .catch(function () {
-                console.log("Ha salido del principal");
-            })
-            .then (function () {
-                //always executed
+                })
+                .catch(function () {
+                    console.log("Ha salido del principal");
+                })
+                .then (function () {
+                    //always executed
+                });
             });
-            }
+            
             
             </script>
 

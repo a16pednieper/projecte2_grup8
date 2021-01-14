@@ -2,7 +2,7 @@
 
 require_once("viatges.php");
 
-class Usuari extends viatges {
+class checkUsuari extends viatges {
 
     private $id;
     private $nom;

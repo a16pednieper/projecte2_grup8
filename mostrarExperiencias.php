@@ -4,7 +4,8 @@ require_once("experiencia.php");
 
     
     $experiencia = new Experiencia();
-    $dades = $experiencia -> select();
+    $cat = $_GET['idcategoria'];
+    $dades = $experiencia -> filtrar($cat);
 
     echo json_encode($dades);   
     
