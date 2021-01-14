@@ -66,7 +66,7 @@
             var datos = [];
 
             document.getElementById("consulta").addEventListener("click", function(){
-                let valor=0;
+                let valor=document.getElementById("categoria").value;
                 console.log(valor)
                 console.log("hago la llamada a axios")
                 // AXIOS para entrar en Localhost

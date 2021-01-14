@@ -19,16 +19,23 @@
     $this->db_name = "a16pednieper_v2";
   }  								
 
+  function __toString(){
+    return "(" . $this->id . ", " . $this->titol . ", " . $this->imatge . ", " . $this->likes . ", " . $this->coordenadas . "," . $this->dislikes . ", " . $this->fecha . ", " . $this->id_usuari . ", " . $this->id_categoria . ")";
+}
+
   function filtrar($cat){
     if ($cat == 0){
       $this->query = "SELECT * FROM EXPERIENCIA";
-      return $this->rows;
     }
   
     else{
       $this->query = "SELECT id, titulo, descripcion FROM EXPERIENCIA WHERE id_categoria='$cat'";
-      return $this->rows;
+      
     }
+
+    $this-> get_results_from_query();
+    return $this->rows;
+    
   }
     public function select() {
       $this->query = "SELECT * FROM EXPERIENCIA";
