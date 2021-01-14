@@ -28,8 +28,8 @@
       $this->query = "SELECT * FROM EXPERIENCIA";
     }
   
-    else if ($cat == 1){
-      $this->query = "SELECT id, titol, descripcio FROM EXPERIENCIA WHERE id_categoria='1'";
+    else {
+      $this->query = "SELECT * FROM EXPERIENCIA WHERE id_categoria='$cat'";
       
     }
 
