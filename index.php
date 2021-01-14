@@ -57,28 +57,12 @@
         </select>
     
         <input type="button" id="consulta" value="Consulta">
-        <br>
-        <input type="button" id="afegir" value="afegir"> 
-        <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <h4 class="modal-title" id="myModalLabel">Afegir Experiencia</h4>
-                </div>
-                <div class="modal-body">
-                    <?php
-                         include 'afegirExperiencia.php';
-                    ?>
-                </div>
-            </div>
-        </div>
-        </div>
+        <br> 
+
         <div class="experiences" id="experiencies">
             
-        <script>
+        <script>                      
+
             var datos = [];
 
             document.getElementById("consulta").addEventListener("click", function(){
@@ -95,10 +79,9 @@
                 axios.get('http://labs.iam.cat/~a16pednieper/projecte2_grup8/mostrarExperiencias.php',{
                     params: {
                         cat: valor
-                }
                 })     
             .then( response =>  {   
-            
+               
                 
                 
                 datos=response.data
@@ -114,28 +97,28 @@
                     const element = datos[index];
                     console.log(index);
 
-                //  htmlStr += `<h3> Desc ${datos[index].Descripcio}  </h3>`;
-                htmlStr += `<ul class="cards clearfix">
+                  //  htmlStr += `<h3> Desc ${datos[index].Descripcio}  </h3>`;
+                  htmlStr += `<ul class="cards clearfix">
                         <li>
                         <figure class="product-card">
                         <a href="#">
-                        <img src='${datos[index].imatge}'></img>
-                            <figcaption>
+                           <img src='${datos[index].imatge}'></img>
+                             <figcaption>
                             <h5 class="product-card-title">${datos[index].titol}</h5>
-                                        <p>${datos[index].descripcio}</p>
-                                        <p class="product-card-address">
-                                        ${datos[index].fecha}
-                                        </p>
-                                        <div class="product-card-price">
-                                            <span class="price-savings">${datos[index].id_categoria}</span>
-                                            <p class="amount-price">${datos[index].likes} Likes</p>
-                                            <p class="amount-price">${datos[index].dislikes} Dislikes</p>
-                                        </div>
-                                        </figcaption>
-                                    </a>
-                                    </figure>
-                                </li>
-                            </ul>`;
+                                         <p>${datos[index].descripcio}</p>
+                                         <p class="product-card-address">
+                                         ${datos[index].fecha}
+                                         </p>
+                                         <div class="product-card-price">
+                                             <span class="price-savings">${datos[index].id_categoria}</span>
+                                             <p class="amount-price">${datos[index].likes} Likes</p>
+                                             <p class="amount-price">${datos[index].dislikes} Dislikes</p>
+                                         </div>
+                                         </figcaption>
+                                     </a>
+                                     </figure>
+                                 </li>
+                             </ul>`;
                 }
 
                 document.getElementById("experiencies").innerHTML=htmlStr;
@@ -150,11 +133,11 @@
                 //     for (var index = 0; index < llargada; index++) {
                 //         const element = response[index];                    
                                 
-            
+               
 
 
                 // document.getElementById("experiencies").innerHTML=htmlStr;
-
+            
                 
                 })
                 .catch(function () {
@@ -164,10 +147,9 @@
                     //always executed
                 });
             });
-
-
-
-        </script>
+            
+            
+            </script>
 
         </div>  
 
