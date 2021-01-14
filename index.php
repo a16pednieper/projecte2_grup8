@@ -57,8 +57,25 @@
         </select>
     
         <input type="button" id="consulta" value="Consulta">
-        <br> 
-
+        <br>
+        <input type="button" id="afegir" value=""> 
+        <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Registro Usuario</h4>
+                </div>
+                <div class="modal-body">
+                    <?php
+                         include 'afegirExperiencia.php';
+                    ?>
+                </div>
+            </div>
+        </div>
+        </div>
         <div class="experiences" id="experiencies">
             
         <script src="js/filtro.js"></script>
