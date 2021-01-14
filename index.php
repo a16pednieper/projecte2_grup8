@@ -57,7 +57,13 @@
         </select>
     
         <input type="button" id="consulta" value="Consulta">
-        <br> 
+        <button type="button" class="btn btn-success btn-lg badge-pill" data-toggle="modal" data-target="#afegirexp">
+            Afegir Experiencia
+        </button>
+
+        <?php include ('afegirExperiencia.php'); ?>
+
+
 
         <div class="experiences" id="experiencies">
             
