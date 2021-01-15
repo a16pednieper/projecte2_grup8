@@ -44,10 +44,10 @@
     }
     
     public function crearExperiencia($titol, $fecha , $descripcio , $cat){
-      $this->query = "INSERT INTO EXPERIENCIA (titol, fecha, descripcio, cat ) VALUES ('$titol', '$fecha','$descripcio', '$cat')";
+      $this->query = "INSERT INTO EXPERIENCIA (titol, fecha, descripcio,id_categoria, id_usuari ) VALUES ('$titol', '$fecha','$descripcio', '$cat','4' )";
       $this->execute_single_query();
 
-      return "EXPERIENCIA CREADA";
+      return $this->rows;
 
     }
 

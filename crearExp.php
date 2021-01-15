@@ -7,7 +7,7 @@ error_log("segon");
 $titol =  $_POST['titol'];
 $fecha =  $_POST['fecha'];
 $text =  $_POST['text'];
-$cat =  $_POST['cat'];
+$cat = $_POST['cat'];
 
 error_log("tercer");
 
