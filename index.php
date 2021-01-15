@@ -80,10 +80,11 @@
 
         <?php include ('afegirExperiencia.php'); ?>
 
-
+        <br>
+        <br>
 
         <div class="experiences" id="experiencies">
-            
+        <div class="mipadre">
         <script>                      
 
             var datos = [];
@@ -93,17 +94,17 @@
                 console.log(valor)
                  console.log("hago la llamada a axios")
                 // AXIOS para entrar en Localhost
-                // axios.get('http://localhost/projecte2_grup8/mostrarExperiencias.php', {
-                //     params: {
-                //         cat: valor
-                //     }
-                // })     
-                // AXIOS para entrar en LABS
-                axios.get('http://labs.iam.cat/~a16pednieper/projecte2_grup8/mostrarExperiencias.php',{
+                axios.get('http://localhost/projecte2_grup8/mostrarExperiencias.php', {
                     params: {
                         cat: valor
                     }
-                })    
+                })     
+                // AXIOS para entrar en LABS
+                // axios.get('http://labs.iam.cat/~a16pednieper/projecte2_grup8/mostrarExperiencias.php',{
+                    // params: {
+                        // cat: valor
+                    // }
+                // })    
             .then( response =>  {   
                
                 
@@ -122,7 +123,7 @@
                     console.log(index);
 
                   //  htmlStr += `<h3> Desc ${datos[index].Descripcio}  </h3>`;
-                  htmlStr += `<ul class="cards clearfix">
+                  htmlStr += `<div class="expe"><ul class="cards clearfix">
                         <li>
                         <figure class="product-card">
                         <a href="#">
@@ -134,7 +135,7 @@
                                          ${datos[index].fecha}
                                          </p>
                                          <div class="product-card-price">
-                                             <span class="price-savings">${datos[index].id_categoria}</span>
+                                             <span class="price-savings">${datos[index].coordenadas}</span>
                                              <p class="amount-price">${datos[index].likes} Likes</p>
                                              <p class="amount-price">${datos[index].dislikes} Dislikes</p>
                                          </div>
@@ -142,7 +143,7 @@
                                      </a>
                                      </figure>
                                  </li>
-                             </ul>`;
+                             </ul></div>`;
                 }
 
                 document.getElementById("experiencies").innerHTML=htmlStr;
@@ -170,11 +171,11 @@
                 .then (function () {
                     //always executed
                 });
+           
             });
             
-            
             </script>
-
+        </div>
         </div>  
 
     </div>
