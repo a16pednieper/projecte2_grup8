@@ -42,9 +42,14 @@
       session_start();
       return $this->rows;
     }
-  
+    
+    public function crearExperiencia($titol, $fecha , $descripcio , $cat){
+      $this->query = "INSERT INTO EXPERIENCIA (titol, fecha, descripcio, cat ) VALUES ('$titol', '$fecha','$descripcio', '$cat')";
+      $this->execute_single_query();
 
-  
+      return "EXPERIENCIA CREADA";
+
+    }
 
   }
 

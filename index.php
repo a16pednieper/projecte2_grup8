@@ -93,17 +93,17 @@
                 console.log(valor)
                  console.log("hago la llamada a axios")
                 // AXIOS para entrar en Localhost
-                // axios.get('http://localhost/projecte2_grup8/mostrarExperiencias.php', {
-                //     params: {
-                //         cat: valor
-                //     }
-                // })     
-                // AXIOS para entrar en LABS
-                axios.get('http://labs.iam.cat/~a16pednieper/projecte2_grup8/mostrarExperiencias.php',{
+                axios.get('http://localhost/projecte2_grup8/mostrarExperiencias.php', {
                     params: {
                         cat: valor
                     }
-                })    
+                })     
+                // AXIOS para entrar en LABS
+                // axios.get('http://labs.iam.cat/~a16pednieper/projecte2_grup8/mostrarExperiencias.php',{
+                //     params: {
+                //         cat: valor
+                //     }
+                // })    
             .then( response =>  {   
                
                 
