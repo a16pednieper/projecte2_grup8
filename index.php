@@ -99,18 +99,14 @@
                         cat: valor
                     }
                 })     
+                
                 // AXIOS para entrar en LABS
                 // axios.get('http://labs.iam.cat/~a16pednieper/projecte2_grup8/mostrarExperiencias.php',{
-<<<<<<< HEAD
                     // params: {
                         // cat: valor
                     // }
-=======
-                //     params: {
-                //         cat: valor
-                //     }
->>>>>>> f048f2b0946295d3c27fa2d66db140d2d59163ee
-                // })    
+                // })   
+
             .then( response =>  {   
                
                 

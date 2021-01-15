@@ -46,7 +46,7 @@ var datos = [];
                                          ${datos[index].fecha}
                                          </p>
                                          <div class="product-card-price">
-                                             <span class="price-savings">${datos[index].id_categoria}</span>
+                                             <span class="price-savings">${datos[index].coordenadas}</span>
                                              <p class="amount-price">${datos[index].likes} Likes</p>
                                              <p class="amount-price">${datos[index].dislikes} Dislikes</p>
                                          </div>
