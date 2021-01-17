@@ -39,9 +39,9 @@ td, th {
     margin-left: 20px;
 }
 
-.footer{
+/* .footer{
     width: 100%;
-    position: fixed;
+    position: relative;
     bottom: 0;
 
 }
@@ -51,7 +51,7 @@ td, th {
   position: fixed;
   bottom: 0;
 
-}  */
+} */
 
 /*.expe{
   column-count: 3;
