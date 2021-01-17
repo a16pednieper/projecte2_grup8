@@ -2,7 +2,7 @@
 
 require_once("viatges.php");
 
-class checkUsuari extends viatges {
+class Usuari extends viatges {
 
     private $id;
     private $nom;
@@ -23,6 +23,7 @@ class checkUsuari extends viatges {
         
         $this->query = "INSERT INTO USUARI (nom, contrasenya) VALUES ('$nom', '$contrasenya');";
         $this->execute_single_query();
+       
     }
 
 }

@@ -17,4 +17,6 @@ error_log("cuatro");
 
 $experiencia-> crearExperiencia($titol, $fecha, $text, $cat);
 
+header('Location:logeado.php');
+
 ?>

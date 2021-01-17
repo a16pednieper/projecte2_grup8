@@ -16,8 +16,8 @@
               <textarea type="text" name="text" rows="4" id="inputText" class="form-control" placeholder="Text" required=""></textarea>
               <br>
               <select name="cat" id="categoria">
-              <option value="1">Aventures</option>
-              <option value="2">Muntanya</option>
+              <option value="1">Muntanya</option>
+              <option value="2">Aventures</option>
               <option value="3">Familiar</option>                                   
               </select>            
               <div class="modal-footer">

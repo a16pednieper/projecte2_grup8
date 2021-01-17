@@ -44,11 +44,14 @@
     }
     
       public function crearExperiencia($titol, $fecha , $descripcio , $cat){
-
-      $this->query = "INSERT INTO EXPERIENCIA (titol, fecha, descripcio,id_categoria, id_usuari ) VALUES ('$titol', '$fecha','$descripcio', '$cat','4' )";
+      $random= random_int(8, 100);
+      $url= "https://picsum.photos/286/180?random=";
+      $img= $url. $random;
+      $this->query = "INSERT INTO EXPERIENCIA (titol, fecha, descripcio,id_categoria, id_usuari, imatge ) VALUES ('$titol', '$fecha','$descripcio', '$cat','4','$img' )";
       $this->execute_single_query();
 
       return $this->rows;
+      
 
     }
 

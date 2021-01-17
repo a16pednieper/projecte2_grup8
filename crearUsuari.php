@@ -5,12 +5,12 @@
 		<h2>Crear contacte</h2>
         <form action="registro.php" method="post">
             <label for="nom">Nom </label>
-            <input type="text" name="nom">
+            <input type="text" name="nom" required />
             <br>
-			<label for="cognom1"> Password </label>
-            <input type="password" name="password">
+			<label for="password"> Password </label>
+            <input type="password" name="password" required />
             <br>
-            <input type="submit" value="Crear">
+            <input type="submit" value="Crear" />
             <br>            
         </form> 
 		

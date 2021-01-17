@@ -74,7 +74,7 @@
                       
                       console_log( $result );
                       */
-                    header("Location: login.html");
+                    header("Location: logeado.php");
 
                     $conn=closeBD();
                 };

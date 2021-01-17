@@ -17,6 +17,8 @@
 
         $user -> registro($datos);
 
+        header('Location:index.php');
+
     }
 
 

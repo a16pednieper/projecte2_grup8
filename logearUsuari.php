@@ -5,10 +5,10 @@
 		<h2>LOGIN</h2>
         <form action="login.php" method="post">
             <label for="nom">Nom </label>
-            <input type="text" name="nom">
+            <input type="text" name="nom" required  />
             <br>
 			<label for="cognom1"> Password </label>
-            <input type="password" name="password">
+            <input type="password" name="password" required />
             <br>
             <input type="submit" value="logear">
             <br>            
