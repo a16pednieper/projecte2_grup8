@@ -39,19 +39,19 @@ td, th {
     margin-left: 20px;
 }
 
-/* .footer{
+.footer{
     width: 100%;
-    position: relative;
+    position: fixed;
     bottom: 0;
 
 }
 .copyright {
 
   width: 100%;
-  position: relative;
+  position: fixed;
   bottom: 0;
 
-} */
+}  */
 
 /*.expe{
   column-count: 3;
@@ -62,7 +62,7 @@ td, th {
     border-style: solid;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    
     /* grid-template-columns: auto auto auto auto; */
     /* grid-column-gap: 50px; */
 }
